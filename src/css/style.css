@@ -68,7 +68,7 @@ header {
 }
 #Description .description-wrapper h1{
     text-transform: uppercase;
-    color: var(--background-color);
+    color: #006C00;
     font-size: 50px;
     margin-bottom: 32px;
 }
