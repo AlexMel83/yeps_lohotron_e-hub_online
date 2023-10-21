@@ -27,7 +27,7 @@ $(document).ready(function () {
         if (exists) {
             document.location.href = "./number-check.html";
         } else {
-            console.log('Number not exists');
+            document.location.href = "./number-check-neutral.html";
         }
     });
 
