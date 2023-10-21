@@ -1,0 +1,115 @@
+:root {   
+    --background-color: #00B300;   
+    --text-light-color: #FFF;
+    --text-dark-color: #3A273B;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 32px;
+}
+
+
+/* header start  */
+header {
+    background-color:var(--background-color); 
+    color: var(--text-colors);
+    padding: 32px; 
+    display: flex;
+    justify-content: space-between;
+    height: 99px;
+    margin: 0px -32px 40px -32px;
+}
+.header_nav ul li {
+    display: inline; 
+    margin-right: 16px; 
+}
+
+.header_nav ul li a {
+    text-decoration: none; 
+    color: var(--text-light-color);
+    font-size: 16px;
+}
+.header_button-wrapper .header_button {   
+    font-size: 14px;
+    background-color: var(--background-color);
+    color:  var(--text-light-color);
+    border: 2px solid  var(--text-light-color);
+    border-radius: 10px; 
+    cursor: pointer; 
+    padding: 5px;  
+}
+.header_button-wrapper .header_button:hover {
+    background-color:  var(--text-light-color); 
+    color: #006C00; 
+}
+/* header end  */
+
+
+/* Description start */
+#Description{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 16px;
+}
+#Description .description-wrapper{
+    width: 50%;
+}
+#Description .description-wrapper h1{
+    text-transform: uppercase;
+    color: #006C00;
+    font-size: 50px;
+    margin-bottom: 32px;
+}
+#Description .description-wrapper .description-text p{
+    margin-bottom: 16px;
+}
+/* Description end */
+
+/*Search-bar start */
+#Search-bar{
+    display: flex;
+}
+#Search-bar .search-bar-box {  
+    display: flex;  
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#Search-bar .search-bar-box input[type="text"] {   
+    width: 100%; 
+    font-size: 14px;
+    padding: 21px;
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+#Search-bar-button{     
+    text-transform: uppercase;
+    padding: 10px 78px;
+    background-color: var(--background-color); 
+    font-size: 16px;   
+    color:  var(--text-light-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Search-bar-button:hover {
+    background-color:  var(--text-light-color); 
+    color: #006C00; 
+    border: 1px solid var(--background-color);
+}
+/*Search-bar end */
