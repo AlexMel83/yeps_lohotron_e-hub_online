@@ -38,18 +38,18 @@ header {
     margin: 0px -32px 40px -32px;
 }
 
-.header_nav ul li {
+.menu-nav ul li {
     display: inline;
     margin-right: 16px;
 }
 
-.header_nav ul li a {
+.menu-nav ul li a {
     text-decoration: none;
     color: var(--text-light-color);
     font-size: 14px;
 }
 
-.header_nav {
+.menu-nav {
     padding-top: 5px;
 }
 
@@ -454,3 +454,17 @@ header {
 }
 /* Useful information end */
 
+ /* footer start */
+ footer{
+    background-color: var(--background-color);
+    color: var(--text-colors);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    height: 99px;
+    margin: 0px -32px 0px -32px;
+ }
+ footer .logo{
+    margin-right: 15%;
+ }
+  /* footer end */
