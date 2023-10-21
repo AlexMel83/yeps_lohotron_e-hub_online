@@ -84,7 +84,7 @@ header {
 }
 
 #Description .description-wrapper {
-    width: 50%;
+    width: 60%;
 }
 
 #Description .description-wrapper h1 {
@@ -96,13 +96,16 @@ header {
 }
 
 .description-text {
-    padding-right: 70px;
+    padding-right: 120px;
 }
 
 #Description .description-wrapper .description-text p {
     margin-bottom: 16px;
 }
-
+.description-text span{
+    color: var(--text-green-color);
+    font-weight: bold;
+}
 /* Description end */
 
 /*Search-bar start */
@@ -719,8 +722,5 @@ footer .logo {
     width: 50%;
     border-left: 2px solid #FFC5C5;  
     padding: 32px 30px 32px 60px;
- }
- #Search_results .search_results-rating-images .search_results-rating-chart.positiv{ 
-    border: 2px solid var(--background-light-color); 
 }
  /* Search_results end  */
