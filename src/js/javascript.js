@@ -7,6 +7,7 @@ $(document).ready(function () {
     });
 
     //-------get response from api-----
+
     async function getPhones() {
         let phones;
         await $.get("http://safetalk.fromavdiivka.city:4040/api/phones", function (data, status) {
@@ -16,6 +17,16 @@ $(document).ready(function () {
         console.log(phones)
     }
 
-    getPhones()
+    let input = document.querySelector('.phone');
+    let findButton = document.getElementById('Search-bar-button');
+
+    findButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        getPhones();
+    })
+
+
+
 
 })
+
