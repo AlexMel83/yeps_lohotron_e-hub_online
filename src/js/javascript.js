@@ -8,12 +8,11 @@ $(document).ready(function () {
 
     //-------get response from api-----
     async function getPhones() {
-        var phones = $.get("http://localhost:4040/api/phones", function (data, status) {
-            // alert("Data: " + data + "\nStatus: " + status);
+        let phones;
+        await $.get("http://safetalk.fromavdiivka.city", function (data, status) {
+            phones = data;
         });
-
         // let w = $.get('http://safetalk.fromavdiivka.city:4040/api/phones')
-
         console.log(phones)
     }
 
