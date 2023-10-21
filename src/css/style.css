@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     height: 99px;
     margin: 0px -32px 40px -32px;
+    border-radius: 0 0 10px 10px;
 }
 
 .menu-nav ul li {
@@ -463,6 +464,7 @@ header {
     justify-content: center;
     height: 99px;
     margin: 0px -32px 0px -32px;
+    border-radius: 10px 10px 0 0;
  }
  footer .logo{
     margin-right: 15%;
