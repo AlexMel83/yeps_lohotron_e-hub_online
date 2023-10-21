@@ -14,16 +14,16 @@
     <div class="main-block">
         <!-- header start -->
         <header>
-            <div class="header_logo">
+            <div class="logo">
                 <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
             </div>
-            <nav class="header_nav">
+            <nav class="menu-nav">
                 <ul>
-                    <li class="header_nav-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
-                    <li class="header_nav-item"><a href="#About_us">Про нас</a></li>
-                    <li class="header_nav-item"><a href="#For_partners">Партнерам</a></li>
-                    <li class="header_nav-item"><a href="#useful-info">Корисна інформація</a></li>
-                    <li class="header_nav-item"><a href="#">Контакти</a></li>
+                    <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="#About_us">Про нас</a></li>
+                    <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
+                    <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
+                    <li class="menu-item"><a href="#">Контакти</a></li>
                 </ul>
             </nav>
             <div class="header_button-wrapper">
@@ -36,7 +36,7 @@
         <!-- Description start  -->
         <section id="Description">
             <div class="description-wrapper">
-                <h1>Ласкаво просимо на SafeTalk!</h1>
+                <h1>Національний Інформаційний Хаб</h1>
                 <div class="description-text">
                     <p>З нашою платформою кожен ваш дзвінок стає безпечнішим. Перевіряйте номери, діліться відгуками та отримайте більше інформації про підозрілі номери.</p>
                     <p>Разом робимо телефонні розмови прозорішими та безпечнішими для всіх!</p>
@@ -51,7 +51,7 @@
         <!-- Search-bar start  -->
         <section id="Search-bar">
             <div class="search-bar-box">
-                <input type="text" placeholder="Введіть номер телефону">
+                <input type="text" id="phone-input" placeholder="Введіть номер телефону">
                 <button id="Search-bar-button">знайти</button>
             </div>
         </section>
@@ -271,7 +271,27 @@
         </section>     
         <!-- Useful information end  -->
 
+          <!-- footer start -->
+          <footer>
+            <div class="logo">
+                <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
+            </div>
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="#About_us">Про нас</a></li>
+                    <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
+                    <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>                    
+                </ul>
+            </nav>         
+        </footer>
+        <!-- footer end -->
+
+
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script src="./src/js/javascript.js"></script>
 </body>
 
