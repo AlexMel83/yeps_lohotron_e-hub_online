@@ -8,13 +8,13 @@ $(document).ready(function () {
 
     //-------get response from api-----
     async function getPhones() {
-        var jqxhr = $.get("http://safetalk.fromavdiivka.city:4040/api/phones", function (data, status) {
-            alert("Data: " + data + "\nStatus: " + status);
+        var phones = $.get("http://localhost:4040/api/phones", function (data, status) {
+            // alert("Data: " + data + "\nStatus: " + status);
         });
 
         // let w = $.get('http://safetalk.fromavdiivka.city:4040/api/phones')
 
-        console.log(jqxhr)
+        console.log(phones)
     }
 
     getPhones()
