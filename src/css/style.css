@@ -717,6 +717,19 @@ footer .logo {
 }
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items span{
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    margin-top: 16px; 
+}
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items img{
+    width: 60px;
+    margin: 0 auto;
 }
 #Search_results .search_results-rating  .search_results-rating-images .search_results-rating-likes{
     display: flex;
@@ -732,4 +745,6 @@ footer .logo {
 #Search_results .search_results-rating-images .search_results-rating-chart.positiv{    
     border-left: 2px solid  var(--background-light-color); 
 }
+
+
  /* Search_results end  */
