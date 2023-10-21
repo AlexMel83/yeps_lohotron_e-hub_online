@@ -27,4 +27,22 @@ module.exports = class PhonesRepository {
             throw error;
         }
     }
+
+    async addPhone(fields) {
+        const trx = await knex.transaction({ isolation: 'repeatable read' });
+
+        try {
+            const result = await knex(PHONES_TABLE)
+                .transacting(trx)
+                .insert(fields)
+                .returning("id");
+
+            await trx.commit();
+
+            return result;
+        } catch (error) {
+            await trx.rollback();
+            throw "Atomicity error " + error;
+        }
+    }
 }

@@ -20,4 +20,18 @@ exports.getPhones = async (req, res) => {
     } catch (error) {
         return res.status(400).send(error);
     }
+};
+
+exports.addPhone = async (req, res) => {
+    try {
+        const phonesUseCase = new PhonesUseCase();
+        const data = req.body;
+
+        if (data) {
+            const phone = await phonesUseCase.addPhone(data);
+            return res.status(200).send(phone);
+        }
+    } catch (error) {
+        return res.status(400).send(error);
+    }
 }
