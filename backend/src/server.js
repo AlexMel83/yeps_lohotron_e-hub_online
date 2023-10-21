@@ -8,4 +8,6 @@ const { routeInit } = require('./presentation-layer/routes');
 
 routeInit(app, express);
 
-server.listen();
+server.listen(config.PORT, () => {
+    console.log(`Server is runninng on port: ${config.PORT}`)
+});

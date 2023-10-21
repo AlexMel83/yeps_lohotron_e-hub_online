@@ -1,10 +1,9 @@
-const env = require('../../transferenv.js')
-
+require('dotenv').config({ path: __dirname + '/../../.env' });
 const pg = require('pg');
 const fs = require('fs');
 const sql = fs.readFileSync('pg_phone_demo.sql').toString();
 
-const { dbpassword, dbuser, dbhost, dbname, dbport } = env;
+const { dbpassword, dbuser, dbhost, dbname, dbport } = process.env;
 
 const config = {
     host: dbhost,
