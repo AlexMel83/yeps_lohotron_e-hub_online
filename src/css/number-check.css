@@ -1,0 +1,64 @@
+:root {
+    --background-color: #00B300;
+    --background-light-color: #CAFFCA;
+    --text-light-color: #FFF;
+    --text-dark-color: #3A273B;
+    --text-black-color: #000000;
+    --text-green-color: #006C00;
+    --text-yellow-color: #FFA500;
+    --text-darkgray-color: #646464;
+    --text-gray-color: #7E7E7E;
+    --border-gray-color: #7E7E7E;
+    --border-dark-green: #006C00;
+    --border-light-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+
+}
+
+/* login-signup start */
+#login-signup {
+    background-color: var(--background-color);
+    padding: 32px 0;
+    margin: 0;
+}
+
+#login-signup h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--text-light-color);
+    text-align: center;
+}
+
+#login-signup .login-signup-buttons {
+    margin-top: 24px;
+    text-align: center;
+}
+
+#login-signup .login-signup-buttons button {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-light-color);
+    color: var(--text-light-color);
+    border-radius: 10px;
+    margin: 0 8px;
+}
+
+/* login-signup end */
