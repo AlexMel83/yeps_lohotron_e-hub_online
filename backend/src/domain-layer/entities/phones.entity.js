@@ -3,9 +3,7 @@ module.exports = class Phone {
     constructor(phone) {
         this.phone = {
             id: phone.id,
-            phoneNumber: phone.phone,
-            createdAt: phone.createdAt,
-            user_id: phone.user_id
+            phone: phone.phone,
         }
 
         return this.phone;
