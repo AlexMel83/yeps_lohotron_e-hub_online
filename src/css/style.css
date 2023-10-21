@@ -3,7 +3,7 @@
     --background-light-color: #CAFFCA;
     --text-light-color: #FFF;
     --text-dark-color: #3A273B;
-    --text-black-color:#000000;
+    --text-black-color: #000000;
     --text-green-color: #006C00;
     --text-gray-color: #7E7E7E;
     --border-gray-color: #7E7E7E;
@@ -47,8 +47,9 @@ header {
     color: var(--text-light-color);
     font-size: 14px;
 }
-.header_nav{
-   padding-top: 5px;
+
+.header_nav {
+    padding-top: 5px;
 }
 
 .header_button-wrapper .header_button {
@@ -62,7 +63,7 @@ header {
 }
 
 .header_button-wrapper .header_button:hover {
-    background-color:  var(--text-light-color);
+    background-color: var(--text-light-color);
     color: #006C00;
 }
 
@@ -84,15 +85,17 @@ header {
 
 #Description .description-wrapper h1 {
     text-transform: uppercase;
-    color:var(--text-green-color);
+    color: var(--text-green-color);
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 32px;
 }
-.description-text{
-    padding-right:70px;
+
+.description-text {
+    padding-right: 70px;
 }
-#Description .description-wrapper .description-text p{
+
+#Description .description-wrapper .description-text p {
     margin-bottom: 16px;
 }
 
@@ -122,7 +125,7 @@ header {
     margin-right: 16px;
 }
 
-#Search-bar-button{
+#Search-bar-button {
     text-transform: uppercase;
     padding: 10px 78px;
     background-color: var(--background-color);
@@ -134,19 +137,20 @@ header {
 }
 
 #Search-bar-button:hover {
-    background-color:  var(--text-light-color);
+    background-color: var(--text-light-color);
     color: #006C00;
     border: 1px solid var(--background-color);
 }
 
 /*Search-bar end */
 /*About_us start */
-#About_us{
+#About_us {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 #About_us .about_us-top {
     margin: 0 auto;
     display: flex;
@@ -158,6 +162,7 @@ header {
     margin-bottom: 24px;
     border-bottom: 1px solid var(--text-green-color);
 }
+
 #About_us .about_us-top .about_us-title-block {
     width: 100%;
     display: flex;
@@ -165,34 +170,41 @@ header {
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 #About_us .about_us-top .about_us-title-block .about_us-title {
     font-size: 50px;
     line-height: 50px;
     font-weight: 600;
 }
+
 #About_us .about_us-top .about_us-title-block .about_us-link a {
     text-decoration: none;
     color: var(--text-black-color);
 }
+
 #About_us .about_us-top .about_us-description {
     display: flex;
 }
+
 #About_us .about_us-top .about_us-description .about_us-item {
     font-size: 14px;
     line-height: 18px;
 }
+
 #About_us .about_us-top .about_us-description .about_us-item:first-child {
     margin-right: 15px;
 }
-#About_us .about_us-top .about_us-description .about_us-item span{
+
+#About_us .about_us-top .about_us-description .about_us-item span {
     color: var(--text-green-color);
     font-weight: bold;
 }
 
-#About_us .about_us-bottom{
+#About_us .about_us-bottom {
     display: flex;
 }
-#About_us .about_us-bottom .about_us-bottom-description{
+
+#About_us .about_us-bottom .about_us-bottom-description {
     display: flex;
     flex-direction: column;
     background-color: var(--background-light-color);
@@ -201,14 +213,17 @@ header {
     flex: 0 1 33.333%;
     margin: 6px;
 }
-#About_us .about_us-bottom .about_us-bottom-description .block-wrapper{
+
+#About_us .about_us-bottom .about_us-bottom-description .block-wrapper {
     display: flex;
     margin-bottom: 16px;
 }
-#About_us .about_us-bottom .about_us-bottom-description .about_us-block-description-item p{
+
+#About_us .about_us-bottom .about_us-bottom-description .about_us-block-description-item p {
     padding-bottom: 10px;
 }
-#About_us .about_us-bottom .about_us-bottom-description .block-wrapper .about_us-title{
+
+#About_us .about_us-bottom .about_us-bottom-description .block-wrapper .about_us-title {
     font-size: 18px;
     width: 50%;
 }
@@ -223,10 +238,12 @@ header {
 }
 
 #useful-info .info-head {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 960px;
 }
 
 #useful-info .info-head h2 {
@@ -273,7 +290,7 @@ header {
 
 #useful-info .info-posts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -307,7 +324,7 @@ header {
 #useful-info .info-videos {
     margin-top: 24px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #useful-info .info-videos .video {
@@ -343,7 +360,8 @@ header {
 }
 
 #useful-info .info-audios {
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
+    max-width: 960px;
 }
 
 #useful-info .info-audios .audio {
