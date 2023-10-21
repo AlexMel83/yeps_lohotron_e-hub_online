@@ -14,8 +14,7 @@ exports.getPhones = async (req, res) => {
     }
 
     try {
-        const phones = await phonesUseCase.getPhones();
-
+        const phones = await phonesUseCase.getPhones()
         return res.status(200).send(phones);
     } catch (error) {
         return res.status(400).send(error);
