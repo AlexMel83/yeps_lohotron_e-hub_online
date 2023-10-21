@@ -84,7 +84,7 @@ header {
 }
 
 #Description .description-wrapper {
-    width: 50%;
+    width: 60%;
 }
 
 #Description .description-wrapper h1 {
@@ -96,13 +96,16 @@ header {
 }
 
 .description-text {
-    padding-right: 70px;
+    padding-right: 120px;
 }
 
 #Description .description-wrapper .description-text p {
     margin-bottom: 16px;
 }
-
+.description-text span{
+    color: var(--text-green-color);
+    font-weight: bold;
+}
 /* Description end */
 
 /*Search-bar start */
@@ -710,4 +713,4 @@ footer .logo {
     border-left: 2px solid #FFC5C5;  
     padding: 32px 30px 32px 60px;
  }
- /* Search_results end  */
+ /* Search_results end */ 
