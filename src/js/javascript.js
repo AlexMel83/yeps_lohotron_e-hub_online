@@ -27,9 +27,9 @@ $(document).ready(function () {
         const phoneNumbers = await getPhones();
         let exists = phoneNumbers.some(item => item.phone === input.value);
         if (exists) {
-            console.log('Number exists');
-        } else {
             document.location.href = "./number-check.html";
+        } else {
+            console.log('Number not exists');
         }
     });
 
