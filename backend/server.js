@@ -5,8 +5,8 @@ const app = express();
 const path = require('path');
 
 const server = http.createServer(app);
-const config = require('./backend/config/express.config');
-const { routeInit } = require('./backend/src/presentation-layer/routes');
+const config = require('./config/express.config');
+const { routeInit } = require('./src/presentation-layer/routes');
 
 routeInit(app, express);
 
@@ -17,7 +17,7 @@ const staticSiteOptions = {
 
 // Запуск сайта:
 express().use(express.static(
-    path.join(__dirname, 'static'),
+    path.join(__dirname, '../static'),
     staticSiteOptions
 )).listen(staticSiteOptions.portnum);
 
