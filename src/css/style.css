@@ -5,8 +5,10 @@
     --text-dark-color: #3A273B;
     --text-black-color: #000000;
     --text-green-color: #006C00;
+    --text-darkgray-color: #646464;
     --text-gray-color: #7E7E7E;
     --border-gray-color: #7E7E7E;
+    --border-dark-green: #006C00;
 }
 
 * {
@@ -392,3 +394,131 @@ header {
 }
 
 /* Useful information end */
+
+
+/* Contacts start */
+#contacts {
+    max-width: 960px;
+    margin: 96px auto 0 auto;
+}
+
+#contacts .contacts-head h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+#contacts .contacts-body {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+#contacts .contacts-body .contacts-form {
+    width: 470px;
+    padding: 24px 16px;
+    background-color: var(--background-light-color);
+    border-radius: 10px;
+}
+
+#contacts .contacts-body .contacts-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts .contacts-body .contacts-form h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--text-black-color);
+    text-align: center;
+}
+
+#contacts .contacts-body .contacts-form form input,
+#contacts .contacts-body .contacts-form form textarea {
+    margin-top: 30px;
+    background-color: var(--background-light-color);
+}
+
+#contacts .contacts-body .contacts-form form input:focus,
+#contacts .contacts-body .contacts-form form textarea:focus {
+    box-shadow: none;
+    border: none;
+    outline: 3px solid var(--background-color);
+}
+
+#contacts .contacts-body .contacts-form form input {
+    height: 50px;
+    border: 1px solid var(--border-dark-green);
+    border-radius: 10px;
+    padding-left: 16px;
+}
+
+#contacts .contacts-body .contacts-form form textarea {
+    height: 100px;
+    border: 1px solid var(--border-dark-green);
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-top: 18px;
+}
+
+#contacts .contacts-body .contacts-form form input::placeholder,
+#contacts .contacts-body .contacts-form form textarea::placeholder {
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--text-gray-color);
+}
+
+#contacts .contacts-body .contacts-form form button {
+    color: var(--text-light-color);
+    text-transform: uppercase;
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 438px;
+    padding: 17px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+#contacts .contacts-body .contacts-info {
+    margin-left: 99px;
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 32px;
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item:first-child {
+    margin-top: 24px;
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item i {
+    font-size: 35px;
+    margin-right: 46px;
+    color: var(--text-green-color);
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item a {
+    text-decoration: none;
+    color: var(--text-darkgray-color);
+}
+
+#contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text a p {
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 8px;
+}
+
+/* Contacts end */
