@@ -1,9 +1,10 @@
 :root {
     --background-color: #00B300;
-    --background-lightgreen-color: #CAFFCA;
+    --background-light-color: #CAFFCA;
     --text-light-color: #FFF;
     --text-dark-color: #3A273B;
-    --text-black-color: #000;
+    --text-black-color:#000000;
+    --text-green-color: #006C00;
     --text-gray-color: #7E7E7E;
     --border-gray-color: #7E7E7E;
 }
@@ -16,11 +17,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding: 0 32px;
+
 }
 
 
@@ -43,7 +45,10 @@ header {
 .header_nav ul li a {
     text-decoration: none;
     color: var(--text-light-color);
-    font-size: 16px;
+    font-size: 14px;
+}
+.header_nav{
+   padding-top: 5px;
 }
 
 .header_button-wrapper .header_button {
@@ -57,7 +62,7 @@ header {
 }
 
 .header_button-wrapper .header_button:hover {
-    background-color: var(--text-light-color);
+    background-color:  var(--text-light-color);
     color: #006C00;
 }
 
@@ -70,7 +75,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1000px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 #Description .description-wrapper {
@@ -79,12 +84,15 @@ header {
 
 #Description .description-wrapper h1 {
     text-transform: uppercase;
-    color: #006C00;
-    font-size: 50px;
+    color:var(--text-green-color);
+    font-size: 40px;
+    font-weight: 700;
     margin-bottom: 32px;
 }
-
-#Description .description-wrapper .description-text p {
+.description-text{
+    padding-right:70px;
+}
+#Description .description-wrapper .description-text p{
     margin-bottom: 16px;
 }
 
@@ -93,12 +101,15 @@ header {
 /*Search-bar start */
 #Search-bar {
     display: flex;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    max-width: 1024px;
+
 }
 
 #Search-bar .search-bar-box {
     display: flex;
     width: 100%;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -111,7 +122,7 @@ header {
     margin-right: 16px;
 }
 
-#Search-bar-button {
+#Search-bar-button{
     text-transform: uppercase;
     padding: 10px 78px;
     background-color: var(--background-color);
@@ -123,12 +134,87 @@ header {
 }
 
 #Search-bar-button:hover {
-    background-color: var(--text-light-color);
+    background-color:  var(--text-light-color);
     color: #006C00;
     border: 1px solid var(--background-color);
 }
 
 /*Search-bar end */
+/*About_us start */
+#About_us{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#About_us .about_us-top {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--text-green-color);
+}
+#About_us .about_us-top .about_us-title-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+#About_us .about_us-top .about_us-title-block .about_us-title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+#About_us .about_us-top .about_us-title-block .about_us-link a {
+    text-decoration: none;
+    color: var(--text-black-color);
+}
+#About_us .about_us-top .about_us-description {
+    display: flex;
+}
+#About_us .about_us-top .about_us-description .about_us-item {
+    font-size: 14px;
+    line-height: 18px;
+}
+#About_us .about_us-top .about_us-description .about_us-item:first-child {
+    margin-right: 15px;
+}
+#About_us .about_us-top .about_us-description .about_us-item span{
+    color: var(--text-green-color);
+    font-weight: bold;
+}
+
+#About_us .about_us-bottom{
+    display: flex;
+}
+#About_us .about_us-bottom .about_us-bottom-description{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-light-color);
+    border-radius: 10px;
+    padding: 24px 16px 0px 16px;
+    flex: 0 1 33.333%;
+    margin: 6px;
+}
+#About_us .about_us-bottom .about_us-bottom-description .block-wrapper{
+    display: flex;
+    margin-bottom: 16px;
+}
+#About_us .about_us-bottom .about_us-bottom-description .about_us-block-description-item p{
+    padding-bottom: 10px;
+}
+#About_us .about_us-bottom .about_us-bottom-description .block-wrapper .about_us-title{
+    font-size: 18px;
+    width: 50%;
+}
+
+/*About_us end */
+
 
 /* Useful information start */
 #useful-info {
