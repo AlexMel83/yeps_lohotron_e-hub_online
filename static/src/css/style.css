@@ -944,4 +944,14 @@ footer .logo {
     color: #fff;
 }
 
+#addPhone:disabled,
+#addPhone[disabled],
+#addPhone:disabled:hover,
+#addPhone[disabled]:hover {
+    border-color: var(--background-form-inactive);
+    background-color: #fff;
+    color: var(--background-form-inactive);
+    cursor: not-allowed;
+}
+
 /* backend features */
