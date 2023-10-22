@@ -895,3 +895,19 @@ footer .logo {
 
 
 /* review-form end */
+
+/* backend features */
+.block-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addPhone {
+    height: 50px;
+    font-size: 22px;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+/* backend features */
