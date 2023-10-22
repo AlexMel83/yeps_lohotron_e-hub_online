@@ -1,6 +1,8 @@
 :root {
     --background-color: #00B300;
     --background-light-color: #CAFFCA;
+    --background-form-inactive: #C9C9C9;
+    --background-form-button: #7E7E7E;
     --text-light-color: #FFF;
     --text-dark-color: #3A273B;
     --text-black-color: #000000;
@@ -10,6 +12,7 @@
     --text-gray-color: #7E7E7E;
     --border-gray-color: #7E7E7E;
     --border-dark-green: #006C00;
+    --border-light-color: #FFF;
 }
 
 * {
@@ -771,8 +774,8 @@ footer .logo {
 
 /* review-form start */
 #review-form {
-    margin: 48px 0;
-    max-width: 960px;
+    margin: 48px auto;
+    max-width: 1000px;
 }
 
 #review-form h2 {
@@ -789,6 +792,8 @@ footer .logo {
     background-color: var(--background-form-inactive);
     padding: 24px 0 24px 16px;
     border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #review-form .review-form-wrap form {
