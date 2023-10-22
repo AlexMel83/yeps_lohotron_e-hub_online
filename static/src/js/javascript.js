@@ -20,16 +20,19 @@ $(document).ready(function () {
     let input = document.querySelector('.phone');
     let findButton = document.getElementById('Search-bar-button');
 
-    findButton.addEventListener('click', async function (e) {
-        e.preventDefault();
-        const phoneNumbers = await getPhones();
-        let exists = phoneNumbers.some(item => item.phone === input.value);
-        if (exists) {
-            document.location.href = "./number-check.html";
-        } else {
-            document.location.href = "./number-check-neutral.html";
-        }
-    });
+    if (findButton) {
+        findButton.addEventListener('click', async function (e) {
+            e.preventDefault();
+            const phoneNumbers = await getPhones();
+
+            let exists = phoneNumbers.some(item => item.phone === input.value);
+            if (exists) {
+                document.location.href = "./number-check.html";
+            } else {
+                document.location.href = "./number-check-neutral.html";
+            }
+        });
+    }
 
 
 
