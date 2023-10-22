@@ -24,13 +24,19 @@ $(document).ready(function () {
         findButton.addEventListener('click', async function (e) {
             e.preventDefault();
             const phoneNumbers = await getPhones();
+            let phoneNumber = "+" + input.value.replace(/\D/g, "");
 
-            let exists = phoneNumbers.some(item => item.phone === input.value);
-            if (exists) {
-                document.location.href = "./number-check.html";
-            } else {
-                document.location.href = "./number-check-neutral.html";
-            }
+            console.log(phoneNumber);
+
+            let exists = phoneNumbers.some(item => item.phone === phoneNumber);
+            if (phoneNumber.length === 13) {
+                if (exists) {
+                    document.location.href = "./number-check.html";
+                } else {
+                    document.location.href = "./number-check-neutral.html";
+                }
+            } else console.log("not correct number")
+
         });
     }
 
