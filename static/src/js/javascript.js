@@ -82,7 +82,8 @@ $(document).ready(function () {
         addButton.addEventListener('click', async function (e) {
             e.preventDefault();
             const phoneNumber = await addPhone();
-            console.log(phoneNumber)
+            console.log(phoneNumber);
+            addButton.disabled = true;
         })
 
 
