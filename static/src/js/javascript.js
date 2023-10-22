@@ -35,7 +35,7 @@ $(document).ready(function () {
                 } else {
                     document.location.href = `./number-check-neutral.html?${phoneNumber}`;
                 }
-            } if (phoneNumber === "+380561233333" || phoneNumber === "+38800505800") {
+            } if (phoneNumber === "+380561233333" || phoneNumber === "+380800505800") {
                 document.location.href = `./number-check-positiv.html?${phoneNumber}`;
             } else console.log("not correct number")
         });
