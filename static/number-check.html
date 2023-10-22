@@ -103,7 +103,7 @@
             <section id="review-form">
                 <h2>Залишити відгук</h2>
                 <div class="review-form-wrap">
-                    <form>
+                    <form id="review-form-data">
                         <input type="text" id="userName" name="user_name" placeholder="Ваше ім’я">
                         <textarea id="userFeedback" placeholder="Ваш досвід з цим номером"></textarea>
                         <p class="add-file">Додати файл</p>
@@ -114,7 +114,7 @@
                                 розміром файлу до 5 МБ
                             </p>
                         </div>
-                        <button type="submit" class="btn mb-3">Залишити відгук</button>
+                        <button id="review-btn" type="submit">Залишити відгук</button>
                     </form>
                     <div class="review-icons">
                         <div class="review-icons-item">
@@ -135,7 +135,6 @@
             <!-- review-form end -->
         </div>
 
-
         <!-- footer start -->
         <footer>
             <div class="logo">
@@ -152,6 +151,7 @@
         </footer>
     </div>
     <!-- footer end -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script src="./src/js/javascript.js"></script>
 </body>
