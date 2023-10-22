@@ -38,7 +38,7 @@
             <!-- Search_results start -->
             <section id="Search_results">
                 <div class="search_results-box">
-                    <div class="search_results-text positiv neutral">
+                    <div class="search_results-text positiv neutral" id="neutral">
                         <div class="search_results-icon">
                             <img src="./src/images/unknown_number.png" alt="Dislace">
                         </div>
@@ -72,7 +72,7 @@
             <section id="review-form">
                 <h2>Залишити відгук</h2>
                 <div class="review-form-wrap">
-                    <form>
+                    <form id="review-form-data">
                         <input type="text" id="userName" name="user_name" placeholder="Ваше ім’я">
                         <textarea id="userFeedback" placeholder="Ваш досвід з цим номером"></textarea>
                         <p class="add-file">Додати файл</p>
@@ -83,7 +83,7 @@
                                 розміром файлу до 5 МБ
                             </p>
                         </div>
-                        <button type="submit" class="btn mb-3">Залишити відгук</button>
+                        <button id="review-btn" type="submit" class="btn mb-3">Залишити відгук</button>
                     </form>
                     <div class="review-icons">
                         <div class="review-icons-item">

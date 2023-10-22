@@ -625,7 +625,6 @@ footer .logo {
 
 /* footer end */
 
-
 /* Search_results start  */
 #Search_results {
     margin: 0 auto;
@@ -650,11 +649,21 @@ footer .logo {
 
 }
 
+#Search_results .search_results-box #reliable {
+    background-color: #CAFFCA;
+}
+
+#Search_results .search_results-box #neutral {
+    background-color: #FDFFB1;
+    border-radius: 10px;
+}
+
 #Search_results .search_results-box .search_results-text .search_results-descripton {
     display: flex;
     flex-direction: column;
     width: 85%;
 }
+
 
 #Search_results .search_results-box .search_results-text .search_results-descripton h2 {
     margin-bottom: 16px;
@@ -680,6 +689,13 @@ footer .logo {
     flex-direction: row;
     border: 1px solid #FFC5C5;
     border-radius: 0px 0px 10px 10px;
+}
+
+#Search_results .search_results-box #search-results-reliable,
+#Search_results .search_results-box #search-results-reliable .search_results-item,
+#Search_results .search_results-rating #search-results-images-reliable,
+#Search_results .search_results-rating #search-results-images-reliable .search_results-rating-chart {
+    border: 1px solid #CAFFCA;
 }
 
 #Search_results .search_results-box .search_results-amount .search_results-item {
@@ -737,6 +753,7 @@ footer .logo {
 
 /* Search_results end */
 
+
 /* login-signup start */
 #login-signup {
     background-color: var(--background-color);
@@ -768,6 +785,11 @@ footer .logo {
     color: var(--text-light-color);
     border-radius: 10px;
     margin: 0 8px;
+}
+
+#login-signup .login-signup-buttons button:hover {
+    background-color: var(--text-light-color);
+    color: #006C00;
 }
 
 /* login-signup end */
@@ -904,11 +926,22 @@ footer .logo {
 }
 
 #addPhone {
-    height: 50px;
+    height: 40px;
+    padding: 8px;
     font-size: 22px;
-    padding: 0 15px;
-    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #00B300;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    font-variant: small-caps;
     cursor: pointer;
+}
+
+#addPhone:hover {
+    background-color: #00B300;
+    color: #fff;
 }
 
 /* backend features */
