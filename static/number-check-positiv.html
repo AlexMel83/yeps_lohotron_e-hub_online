@@ -20,7 +20,7 @@
             </div>
             <nav class="menu-nav">
                 <ul>
-                    <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="index.html#Search-bar">Перевірити номер телефону</a></li>
                     <li class="menu-item"><a href="#About_us">Про нас</a></li>
                     <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
                     <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
@@ -37,17 +37,17 @@
             <!-- Search_results start -->
             <section id="Search_results">
                 <div class="search_results-box">
-                    <div class="search_results-text positiv">
+                    <div class="search_results-text positiv" id="reliable">
                         <div class="search_results-icon">
                             <img src="./src/images/positiv_number.png" alt="Like">
                         </div>
                         <div class="search_results-descripton">
-                            <h2 class="phone"> +380561233333</h2>
+                            <h2 class="phone-number"> +380561233333</h2>
                             <div class="search_results-descripton-bottom">Підтверджено: Цей номер є офіційним контактом
                                 банку “Укрсиббанк”</div>
                         </div>
                     </div>
-                    <div class="search_results-amount positiv">
+                    <div class="search_results-amount positiv" id="search-results-reliable">
                         <div class="search_results-item positiv">
                             <div class="search_results-top">60</div>
                             <div class="search_results-bottom">Пошукових запитів</div>
@@ -65,7 +65,7 @@
 
                 <div class="search_results-rating">
                     <h2>Рейтинг номеру</h2>
-                    <div class="search_results-rating-images positiv">
+                    <div class="search_results-rating-images positiv" id="search-results-images-reliable">
                         <div class="search_results-rating-likes">
                             <div class="search_results-rating-items">
                                 <img src="src/images/positiv_number.png" alt="like image">
@@ -102,7 +102,7 @@
             <section id="review-form">
                 <h2>Залишити відгук</h2>
                 <div class="review-form-wrap">
-                    <form>
+                    <form id="review-form-data">
                         <input type="text" id="userName" name="user_name" placeholder="Ваше ім’я">
                         <textarea id="userFeedback" placeholder="Ваш досвід з цим номером"></textarea>
                         <p class="add-file">Додати файл</p>
@@ -113,7 +113,7 @@
                                 розміром файлу до 5 МБ
                             </p>
                         </div>
-                        <button type="submit" class="btn mb-3">Залишити відгук</button>
+                        <button id="review-btn" type="submit" class="btn mb-3" disabled>Залишити відгук</button>
                     </form>
                     <div class="review-icons">
                         <div class="review-icons-item">
@@ -133,6 +133,7 @@
             </section>
             <!-- review-form end -->
         </div>
+
         <!-- footer start -->
         <footer>
             <div class="logo">
@@ -140,7 +141,7 @@
             </div>
             <nav class="menu-nav">
                 <ul>
-                    <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="index.html#Search-bar">Перевірити номер телефону</a></li>
                     <li class="menu-item"><a href="#About_us">Про нас</a></li>
                     <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
                     <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
