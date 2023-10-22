@@ -91,3 +91,9 @@ $(document).ready(function () {
 
 
 })
+
+const addPhoneButton = document.getElementById("addPhone");
+
+addPhoneButton.addEventListener("click", function () {
+    addPhoneButton.disabled = true;
+});
