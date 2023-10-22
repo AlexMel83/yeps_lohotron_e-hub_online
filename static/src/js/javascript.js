@@ -31,13 +31,22 @@ $(document).ready(function () {
             let exists = phoneNumbers.some(item => item.phone === phoneNumber);
             if (phoneNumber.length === 13) {
                 if (exists) {
-                    document.location.href = "./number-check.html";
+                    document.location.href = `./number-check.html?${phoneNumber}`;
                 } else {
-                    document.location.href = "./number-check-neutral.html";
+                    document.location.href = `./number-check-neutral.html?${phoneNumber}`;
                 }
             } else console.log("not correct number")
 
         });
+    }
+
+    let phoneNumberText = document.querySelectorAll('.phone-number');
+    var p_url = location.search.substring(1);
+
+    if (phoneNumberText) {
+        for (let i = 0; i < phoneNumberText.length; i++) {
+            phoneNumberText[i].innerHTML = p_url;
+        }
     }
 
 
