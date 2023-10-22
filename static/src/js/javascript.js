@@ -35,8 +35,9 @@ $(document).ready(function () {
                 } else {
                     document.location.href = `./number-check-neutral.html?${phoneNumber}`;
                 }
+            } if (phoneNumber === "+380561233333" || phoneNumber === "+380800505800") {
+                document.location.href = `./number-check-positiv.html?${phoneNumber}`;
             } else console.log("not correct number")
-
         });
     }
 
@@ -49,7 +50,44 @@ $(document).ready(function () {
         }
     }
 
+    async function addPhone() {
+        const requestData = {
+            fields: [
+                { phone: p_url }
+            ]
+        };
 
+        try {
+            const response = await fetch("http://safetalk.fromavdiivka.city:4040/api/phones", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(requestData)
+            });
+
+            if (response.ok) {
+                console.log("Дані успішно надіслано до API");
+            } else {
+                console.log("Виникла помилка при надсиланні даних до API");
+            }
+        } catch (error) {
+            console.log("Сталася помилка під час виконання POST-запиту:", error);
+        }
+    }
+
+    let addButton = document.getElementById('addPhone');
+
+    if (addButton) {
+        addButton.addEventListener('click', async function (e) {
+            e.preventDefault();
+            const phoneNumber = await addPhone();
+            console.log(phoneNumber);
+            addButton.disabled = true;
+        })
+
+
+    }
 
 
 })
