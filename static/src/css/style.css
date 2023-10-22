@@ -908,6 +908,7 @@ footer .logo {
     font-size: 22px;
     padding: 0 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* backend features */
