@@ -44,15 +44,61 @@
                         <div class="search_results-descripton">
                             <h2> +380360360363</h2>
                             <div class="search_results-descripton-bottom">
-                                На жаль, номер +380360360363 не знайдено в нашій базі даних. Якщо у вас є інформація про цей номер, будь ласка, додайте ваш відгук та оцінку, щоб допомогти іншим користувачам.
+                                На жаль, номер +380360360363 не знайдено в нашій базі даних. Якщо у вас є інформація про
+                                цей номер, будь ласка, додайте ваш відгук та оцінку, щоб допомогти іншим користувачам.
                                 <p>Ваш внесок важливий для нашої спільноти!</p>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
-            </section>          
+            </section>
+
+            <!-- login-signup start -->
+            <section id="login-signup">
+                <h2>Щоб залишити відгук, потрібно ввійти або зареєструватися</h2>
+                <div class="login-signup-buttons">
+                    <button id="login">Вхід</button>
+                    <button id="signup">Реєстрація</button>
+                </div>
+            </section>
+            <!-- login-signup end -->
+
+            <!-- review-form start -->
+            <section id="review-form">
+                <h2>Залишити відгук</h2>
+                <div class="review-form-wrap">
+                    <form>
+                        <input type="text" id="userName" name="user_name" placeholder="Ваше ім’я">
+                        <textarea id="userFeedback" placeholder="Ваш досвід з цим номером"></textarea>
+                        <p class="add-file">Додати файл</p>
+                        <div class="file-field">
+                            <input type="file" id="userFile" name="file" hidden>
+                            <p>Перетягніть файли сюди чи <label for="userFile">Завантажте</label>. Додавайте до
+                                10 зображень у форматі .jpg, .gif, .png,
+                                розміром файлу до 5 МБ
+                            </p>
+                        </div>
+                        <button type="submit" class="btn mb-3">Залишити відгук</button>
+                    </form>
+                    <div class="review-icons">
+                        <div class="review-icons-item">
+                            <img src="../static/src/images/" alt="Великий палець вниз" />
+                            <p>Ненадійний</p>
+                        </div>
+                        <div class="review-icons-item">
+                            <img src="./src/images/review-form/thumb-up.png" alt="Великий палець вверх" />
+                            <p>Нейтральний</p>
+                        </div>
+                        <div class="review-icons-item">
+                            <img src="./src/images/review-form/thumb-up.png" alt="Великий палець вверх" />
+                            <p>Безпечний</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- review-form end -->
         </div>
-    <!-- search_results end -->
+        <!-- search_results end -->
 
         <!-- footer start -->
         <footer>
