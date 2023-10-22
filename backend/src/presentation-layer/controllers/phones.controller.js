@@ -34,3 +34,27 @@ exports.addPhone = async (req, res) => {
         return res.status(400).send(error);
     }
 }
+
+exports.removePhone = async (req, res) => {
+    if (req?.query?.id) {
+        const id = req.query.id;
+        try {
+            const phonesUseCase = new PhonesUseCase();
+            const phone = await phonesUseCase.removePhone(id);
+
+            return res.status(200).send(phone);
+        } catch (error) {
+            return res.status(400).send(error);
+        }
+    }
+    if (req?.query?.phone) {
+        const number = req.query.phone;
+        try {
+            const phonesUseCase = new PhonesUseCase();
+            const phone = await phonesUseCase.removePhone(number);
+            return res.status(200).send(phone);
+        } catch (error) {
+            return res.status(400).send(error);
+        }
+    }
+}

@@ -81,8 +81,10 @@ $(document).ready(function () {
     if (addButton) {
         addButton.addEventListener('click', async function (e) {
             e.preventDefault();
-            const phoneNumber = await addPhone();
-            console.log(phoneNumber)
+            if (p_url.length === 13) {
+                const phoneNumber = await addPhone();
+                console.log(phoneNumber)
+            }
         })
 
 

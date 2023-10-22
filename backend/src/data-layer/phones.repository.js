@@ -45,4 +45,42 @@ module.exports = class PhonesRepository {
             throw "Atomicity error " + error;
         }
     }
+
+    async removePhone(id) {
+
+        try {
+            if (id.length === 13 || id === 0) {
+                let phone;
+                if (id.length == 13) {
+                    phone = "+" + id.trim();
+                } else if (id === 0) {
+                    phone = "";
+                }
+                const result = await knex(PHONES_TABLE)
+                    .del()
+                    .where({ phone })
+                    .returning("phone");
+                console.log(phone)
+                if (!result) throw `Not have data for deleting with phone: ${phone}`;
+                return {
+                    phone: result[0]
+                };
+            } else {
+                const result = await knex(PHONES_TABLE)
+                    .del()
+                    .where({ id })
+                    .returning("id");
+
+                if (!result) throw `Not have data for deleting with id: ${id}`;
+                return {
+                    id: result[0]
+                };
+            }
+
+
+        } catch (error) {
+            throw error;
+        }
+    }
+
 }

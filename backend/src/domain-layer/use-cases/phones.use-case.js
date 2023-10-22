@@ -52,6 +52,16 @@ module.exports = class PhoneUseCase {
         }
     }
 
+    async removePhone(id) {
+        try {
+            const phoneRepositary = new PhoneRepository();
+            const result = await phoneRepositary.removePhone(id);
+            return result;
+        } catch (error) {
+            throw error;
+        }
+    }
+
     checkStringFieldsInsert(fields) {
         const keys = fields.map(val => {
             return Object.entries(val)[0][0];
