@@ -87,10 +87,11 @@ header {
 }
 
 #Description .description-wrapper {
-    width: 60%;
+    /* width: 60%; */
+    width: 100%;
 }
 
-#Description .description-wrapper h1 {
+#Description .description-wrapper .description-box h1 {
     text-transform: uppercase;
     color: var(--text-green-color);
     font-size: 40px;
