@@ -316,7 +316,9 @@ header {
     flex-direction: row;
     margin-bottom: 30px;
 }
-
+#For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-box{
+   display: flex;
+   }
 #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-nummer {
     width: 4%;
     font-size: 40px;
@@ -325,7 +327,7 @@ header {
 
 #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-item {
     width: 41%;
-    border-left: 2px solid var(--text-yellow-color);
+    border-left: 1px solid var(--text-yellow-color);
     padding-left: 16px;
 }
 
@@ -1039,6 +1041,9 @@ footer .logo {
 /*Search-bar end */
 
 /*About_us start */
+#About_us {
+   margin-bottom: 40px;
+}
 #About_us .about_us-top .about_us-title-block {
    margin-bottom: 16px;
 }
@@ -1046,7 +1051,7 @@ footer .logo {
     font-size: 20px;  
     margin-bottom: 0;     
 }
-#About_us .learn-more span {
+.learn-more span {
     font-size: 10px;   
 }
 #About_us .about_us-top {
@@ -1083,12 +1088,53 @@ footer .logo {
 /*About_us end */
 
 /*For_partners start */
+#For_partners { 
+   padding: 16px;
+   margin: 0px -16px;
+   
+}
 #For_partners .for_partners-block .for_partners-top .for_partners-title {
    font-size: 20px;
    width: 50%;
+   margin-bottom: 0;
 }
 #For_partners .for_partners-block .for_partners-description {
    display: flex;
-   flex-direction: row;
+  
 }
+#For_partners .for_partners-block .for_partners-description .for_partners-column {
+   flex-direction: column;
+   margin-bottom: 0px;
+}
+#For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-box{
+   display: flex;
+   margin-bottom: 16px;
+}
+#For_partners .for_partners-block .for_partners-description .for_partners-column:last-child .for_partners-box {
+   margin-bottom: 0;
+} 
+   #For_partners .for_partners-block .for_partners-top {
+      margin-bottom: 16px;
+  }
+ #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-item h3 {
+   font-size: 16px; 
+   margin-bottom: 8px;
+
+  }
+  #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-item .for_partners-text{
+     font-size: 12px;  
+     margin-bottom: 0px;
+   }
+   #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-nummer {  
+    width: 11%;
+    font-size: 20px; 
+    padding-right: 8px;
+    text-align: right; 
+ }
+   #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-item {
+   width: 88%;
+   padding-left: 8px;
+  
+}
+
 }
