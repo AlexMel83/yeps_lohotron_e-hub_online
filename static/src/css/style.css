@@ -48,11 +48,9 @@ body {
 
 
 
-/* Useful information start */
-/* Useful information end */
 
-/* Contacts start */
-/* Contacts end */
+
+
 
 /* footer start */
 /* footer end */
@@ -556,6 +554,10 @@ header {
    text-align: center;
 }
 
+#contacts .contacts-body .contacts-form h3:first-child {
+   margin-bottom: 8px;
+}
+
 #contacts .contacts-body .contacts-form form input,
 #contacts .contacts-body .contacts-form form textarea {
    margin-top: 30px;
@@ -1000,10 +1002,8 @@ footer .logo {
       padding: 0 16px;
    }
 
+   /* Useful information start */
    #useful-info {
-      /* display: flex;
-      flex-direction: column;
-      align-items: center; */
       margin: 40px auto 0 auto;
       color: var(--text-black-color);
       max-width: 288px;
@@ -1164,4 +1164,99 @@ footer .logo {
       margin-top: 15px;
    }
 
+   /* Useful information end */
+
+   /* Contacts start */
+   #contacts {
+      max-width: 288px;
+      margin: 40px auto;
+   }
+
+   #contacts .contacts-head h2 {
+      font-size: 20px;
+   }
+
+   #contacts .contacts-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 16px;
+   }
+
+   #contacts .contacts-body .contacts-form {
+      width: 288px;
+      padding: 16px 8px;
+      background-color: var(--background-light-color);
+      border-radius: 10px;
+   }
+
+   #contacts .contacts-body .contacts-form h3 {
+      font-size: 16px;
+   }
+
+   #contacts .contacts-body .contacts-form form input,
+   #contacts .contacts-body .contacts-form form textarea {
+      margin-top: 20px;
+   }
+
+   #contacts .contacts-body .contacts-form form input:first-child {
+      margin-top: 16px;
+   }
+
+   #contacts .contacts-body .contacts-form form input:focus,
+   #contacts .contacts-body .contacts-form form textarea:focus {
+      outline: 2px solid var(--background-color);
+   }
+
+   #contacts .contacts-body .contacts-form form input {
+      height: 40px;
+      padding-left: 16px;
+   }
+
+   #contacts .contacts-body .contacts-form form textarea {
+      height: 70px;
+      padding-top: 14px;
+   }
+
+   #contacts .contacts-body .contacts-form form input::placeholder,
+   #contacts .contacts-body .contacts-form form textarea::placeholder {
+      font-size: 12px;
+   }
+
+   #contacts .contacts-body .contacts-form form button {
+      margin: 20px auto 0 auto;
+      width: 272px;
+      padding: 17px 0;
+      border-radius: 10px;
+      font-size: 14px;
+   }
+
+   #contacts .contacts-body .contacts-info {
+      margin-left: 0;
+   }
+
+   #contacts .contacts-body .contacts-info .contacts-info-item {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+   }
+
+   #contacts .contacts-body .contacts-info .contacts-info-item:first-child {
+      margin-top: 32px;
+   }
+
+   #contacts .contacts-body .contacts-info .contacts-info-item i {
+      font-size: 26px;
+      margin-right: 48px;
+   }
+
+   #contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text h4 {
+      font-size: 14px;
+   }
+
+   #contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text a p {
+      font-size: 14px;
+   }
+
+   /* Contacts end */
 }
