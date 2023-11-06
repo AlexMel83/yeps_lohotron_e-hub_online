@@ -31,6 +31,10 @@ body {
 
 }
 
+.row>* {
+   padding: 0;
+   margin: 0;
+}
 
 /* header start  */
 header {
@@ -83,11 +87,12 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1000px;
+   width: 100%;
     margin-bottom: 32px;
 }
 
 #Description .description-wrapper {
-    /* width: 60%; */
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -136,7 +141,9 @@ header {
     border-radius: 10px;
     margin-right: 16px;
 }
-
+#Search-bar-button_mobile{
+   display: none;
+}
 #Search-bar-button {
     text-transform: uppercase;
     padding: 10px 78px;
@@ -956,3 +963,71 @@ footer .logo {
 }
 
 /* backend features */
+
+@media (max-width: 991px) {
+
+   body {
+      padding: 0 16px;
+   }
+
+   #useful-info {
+    
+      max-width: 288px;
+   }
+   .container{
+      padding: 0;
+   }
+   #Description {
+    
+   }
+   #Description .description-wrapper .description-box h1 {
+      font-size: 22px;
+      margin-bottom: 16px;
+   }
+   .description-text {
+      padding-right: 0;
+      font-size: 13px;
+   }
+
+#Description .description-wrapper .description-text p {
+    margin-bottom: 8px;
+}
+ .description-image {
+   width: 100%;
+   order: 2;
+   display: flex;
+   justify-content: center;
+ }
+ .description-image img {
+ 
+   max-width: 403px;
+   width: 100%;  
+ }
+
+ #Search-bar {
+   margin: 16px 0px 24px 0px;
+}
+#Search-bar .search-bar-box {      
+   border: 1px solid var(--background-color);
+   border-radius: 10px;  
+}
+#Search-bar .search-bar-box input[type="text"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 0;
+}
+#Search-bar-button {
+  display: none;
+}
+#Search-bar-button_mobile{
+   display: block; 
+   padding: 8px;
+   background-color: var(--background-color);   
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
+}
