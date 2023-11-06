@@ -32,43 +32,6 @@ body {
 }
 
 /* header start  */
-/* header end  */
-
-/* Description start */
-/* Description end */
-
-/*Search-bar start */
-/*Search-bar end */
-
-/*About_us start */
-/*About_us end */
-
-/*For_partners start */
-/*For_partners end */
-
-
-
-
-
-
-
-/* footer start */
-/* footer end */
-
-/* Search_results start  */
-/* Search_results end  */
-
-/* login-signup start */
-/* login-signup end */
-
-/* review-form start */
-/* review-form end */
-
-/* backend features */
-/* backend features */
-
-
-/* header start  */
 header {
    background-color: var(--background-color);
    color: var(--text-colors);
@@ -1250,10 +1213,7 @@ footer .logo {
       margin-right: 48px;
    }
 
-   #contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text h4 {
-      font-size: 14px;
-   }
-
+   #contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text h4,
    #contacts .contacts-body .contacts-info .contacts-info-item .contacts-info-item-text a p {
       font-size: 14px;
    }
