@@ -1139,8 +1139,42 @@ footer .logo {
  }
    #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-item {
    width: 88%;
-   padding-left: 8px;
-  
+   padding-left: 8px;  
 }
+
+/* footer start */
+footer { 
+   padding: 24px 16px;
+   display: flex;
+   flex-direction: column; 
+   justify-content: space-between;  
+   height: 278px;
+   margin: 0px -16px 0px -16px;
+   border-radius: 10px 10px 0 0;
+}
+
+footer .logo {
+   margin: 0px 0px 24px 0px;
+}
+
+footer .logo img {
+   width: 82px;
+}
+footer .menu-nav {
+   display: flex;
+   flex-direction: column;
+}
+footer .menu-nav ul{
+   padding-left: 0;
+}
+footer .menu-nav ul li {
+   max-width: 151px;
+   display: block;
+   margin: 0px 0px 24px 0px;
+}
+footer .menu-nav ul li:last-child {
+    margin: 0px;
+}
+/* footer end */
 
 }
