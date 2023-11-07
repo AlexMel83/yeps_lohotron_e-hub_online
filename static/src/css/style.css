@@ -217,6 +217,7 @@ body {
         display: flex;
         width: 100%;
         box-sizing: border-box;
+        margin-top: 44px;
     }
 
     #Search-bar .search-bar-box input[type="text"] {
@@ -744,7 +745,10 @@ body {
     }
 
     footer .logo {
-        margin-right: 15%;
+        margin-right: 5%;
+    }
+    footer .menu-nav{
+        margin-right: 100px;
     }
 
     /* footer end */
@@ -1305,6 +1309,7 @@ body {
         #Search-bar .search-bar-box {
             border: 1px solid var(--background-color);
             border-radius: 10px;
+            margin-top: 0px;
         }
 
         #Search-bar .search-bar-box input[type="text"] {
@@ -1710,8 +1715,7 @@ body {
         /* footer start */
         footer {
             padding: 24px 16px;
-            flex-direction: column;
-            justify-content: space-between;
+            flex-direction: column;           
             height: 278px;
             margin: 0px -16px 0px -16px;
         }
@@ -1722,6 +1726,7 @@ body {
 
         footer .logo img {
             width: 82px;
+            margin-top: 16px
         }
 
         footer .menu-nav {
@@ -1736,7 +1741,7 @@ body {
         footer .menu-nav ul li {
             max-width: 151px;
             display: block;
-            margin: 0px 0px 24px 0px;
+            margin: 0px 0px 20px 0px;
         }
 
         footer .menu-nav ul li:last-child {
@@ -1754,5 +1759,8 @@ body {
         .header_button-wrapper .header_button,
         .header_button-wrapper-mobile .header_button {
             font-size: 13px;
+        }
+        footer .menu-nav{
+            margin-right: 0px;
         }
     }
