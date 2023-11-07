@@ -407,7 +407,12 @@ body {
     #For_partners .for_partners-block .for_partners-description .for_partners-column {
         display: flex;
         flex-direction: row;
+        margin-bottom: 31px;
     }
+    #For_partners .for_partners-block .for_partners-description .for_partners-column:last-child {      
+        margin-bottom: 0;
+    }
+
 
     #For_partners .for_partners-block .for_partners-description .for_partners-column .for_partners-box {
         display: flex;
