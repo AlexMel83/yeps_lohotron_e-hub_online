@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('.header_burger').click(function(event){
+        $('.header_burger, .header_menu, header, .header_icon').toggleClass('active');
+        $('body').toggleClass('lock');   //добавляем клаас для блокировки скрола при активации бургер меню
+    });
+});
+
+
 $(document).ready(function () {
     let phones;
 
