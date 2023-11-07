@@ -2,363 +2,437 @@
 <html lang="uk">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>E-hub</title>
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-   <link rel="stylesheet" href="./src/css/icomoon.css">
-   <link rel="stylesheet" href="./src/css/style.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-hub</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./src/css/icomoon.css">
+        <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-   <div class="main-block">
-      <!-- header start -->
-      <header>
-         <div class="logo">
-            <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
-         </div>
-         <nav class="menu-nav">
-            <ul>
-               <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
-               <li class="menu-item"><a href="#About_us">Про нас</a></li>
-               <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
-               <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
-               <li class="menu-item"><a href="#contacts">Контакти</a></li>
-            </ul>
-         </nav>
-         <div class="header_button-wrapper">
-            <button class="header_button">Вхід</button>
-            <button class="header_button">Реєстрація</button>
-         </div>
-      </header>
-      <!-- header end -->
-
-      <!-- Description start  -->
-      <section id="Description">
-         <div class="description-wrapper">
-            <h1>Національний Інформаційний Хаб</h1>
-            <div class="description-text">
-               <p>З нашою платформою <span>SafeTalk</span> кожен ваш дзвінок стає безпечнішим. Перевіряйте номери,
-                  діліться відгуками та отримайте більше інформації про підозрілі номери.</p>
-               <p>Разом робимо телефонні розмови прозорішими та безпечнішими для всіх!</p>
+    <div class="main-block">
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="header_body">
+                    <a href="#" class="header_logo">
+                        <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
+                    </a>
+                    <div class="icon-wrapper">
+                        <div class="header_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M1.09091 21.8961C2.49351 20.5195 4.12338 19.4351 5.98052 18.6429C7.83766 17.8506 9.84416 17.4545 12 17.4545C14.1558 17.4545 16.1623 17.8506 18.0195 18.6429C19.8766 19.4351 21.5065 20.5195 22.9091 21.8961V2.33766C22.9091 2.02597 22.7792 1.74026 22.5195 1.48052C22.2597 1.22078 21.974 1.09091 21.6623 1.09091H2.33766C2.02597 1.09091 1.74026 1.22078 1.48052 1.48052C1.22078 1.74026 1.09091 2.02597 1.09091 2.33766V21.8961ZM12 13.7143C13.2468 13.7143 14.2987 13.2857 15.1558 12.4286C16.013 11.5714 16.4416 10.5195 16.4416 9.27273C16.4416 8.02597 16.013 6.97403 15.1558 6.11688C14.2987 5.25974 13.2468 4.83117 12 4.83117C10.7532 4.83117 9.7013 5.25974 8.84416 6.11688C7.98701 6.97403 7.55844 8.02597 7.55844 9.27273C7.55844 10.5195 7.98701 11.5714 8.84416 12.4286C9.7013 13.2857 10.7532 13.7143 12 13.7143ZM2.33766 24C1.66234 24 1.1039 23.7792 0.662338 23.3377C0.220779 22.8961 0 22.3377 0 21.6623V2.33766C0 1.66234 0.220779 1.1039 0.662338 0.662338C1.1039 0.220779 1.66234 0 2.33766 0H21.6623C22.3377 0 22.8961 0.220779 23.3377 0.662338C23.7792 1.1039 24 1.66234 24 2.33766V21.6623C24 22.3377 23.7792 22.8961 23.3377 23.3377C22.8961 23.7792 22.3377 24 21.6623 24H2.33766ZM1.94805 22.9091H22.0519V22.6753C20.5974 21.2727 19.0195 20.2338 17.3182 19.5584C15.6169 18.8831 13.8442 18.5455 12 18.5455C10.2078 18.5455 8.45455 18.8766 6.74026 19.539C5.02597 20.2013 3.42857 21.2208 1.94805 22.5974V22.9091ZM12 12.6234C11.0909 12.6234 10.3052 12.2922 9.64286 11.6299C8.98052 10.9675 8.64935 10.1818 8.64935 9.27273C8.64935 8.36364 8.98052 7.57792 9.64286 6.91558C10.3052 6.25325 11.0909 5.92208 12 5.92208C12.9091 5.92208 13.6948 6.25325 14.3571 6.91558C15.0195 7.57792 15.3506 8.36364 15.3506 9.27273C15.3506 10.1818 15.0195 10.9675 14.3571 11.6299C13.6948 12.2922 12.9091 12.6234 12 12.6234Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="header_burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="header_menu">
+                        <ul class="header_list">
+                            <li>
+                                <a href="#Search-bar" class="header_link">Перевірити номер телефону</a>
+                            </li>
+                            <li>
+                                <a href="#About_us" class="header_link">Про нас </a>
+                            </li>
+                            <li>
+                                <a href="#For_partners" class="header_link">Партнерам</a>
+                            </li>
+                            <li>
+                                <a href="#useful-info" class="header_link">Корисна інформація</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="header_link">Контакти</a>
+                            </li>
+                        </ul>
+                        <div class="header_button-wrapper-mobile">
+                            <button class="header_button">Вхід</button>
+                            <button class="header_button">Реєстрація</button>
+                        </div>
+                    </nav>
+                    <div class="header_button-wrapper">
+                        <button class="header_button">Вхід</button>
+                        <button class="header_button">Реєстрація</button>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="description-image">
-            <img src="src/images/main_image.jpg" alt="Rating image">
-         </div>
-      </section>
-      <!-- Description end  -->
+        </header>
+        <!-- header end -->
 
-      <!-- Search-bar start  -->
-      <section id="Search-bar">
-         <div class="search-bar-box">
-            <input type="text" placeholder="Введіть номер телефону" class="phone">
-            <button id="Search-bar-button">знайти</button>
-         </div>
-      </section>
-      <!-- Search-bar end  -->
 
-      <!-- About us start  -->
-      <section id="About_us">
-         <div class="about_us-top">
-            <div class="about_us-title-block">
-               <h2 class="about_us-title">Про нас</h2>
-               <div class="about_us-link">
-                  <a href="#" target="_blank">
-                     <div class="learn-more">
+
+        <!-- Description start -->
+        <section id="Description" class="container">
+            <div class="description-wrapper row">
+                <div class="description-box  col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                    <h1>Національний Інформаційний Хаб</h1>
+                    <div class="description-text">
+                        <p>З нашою платформою <span>SafeTalk</span> кожен ваш дзвінок стає безпечнішим. Перевіряйте
+                            номери,
+                            діліться відгуками та отримайте більше інформації про підозрілі номери.</p>
+                        <p>Разом робимо телефонні розмови прозорішими та безпечнішими для всіх!</p>
+                    </div>
+                </div>
+                <!-- Description end -->
+                <div class="description-image col-sm-12 col-md-12 col-lg-5 col-xl-6">
+                    <img src="src/images/main_image.jpg" alt="Rating image">
+                </div>
+                <!-- Search-bar start -->
+                <div id="Search-bar" class="container col-sm-12  col-md-12 col-lg-12">
+                    <div class="search-bar-box ">
+                        <input type="text" placeholder="Введіть номер телефону" class="phone">
+                        <button id="Search-bar-button">знайти</button>
+                        <button id="Search-bar-button_mobile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <mask id="mask0_244_393" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                    width="24" height="24">
+                                    <rect width="24" height="24" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_244_393)">
+                                    <path
+                                        d="M23.2453 24L13.8113 14.566C13.0566 15.2201 12.1887 15.7233 11.2075 16.0755C10.2264 16.4277 9.25786 16.6038 8.30189 16.6038C5.98161 16.6038 4.0179 15.8008 2.41075 14.1948C0.803585 12.5888 0 10.6266 0 8.30804C0 5.98947 0.802981 4.02516 2.40894 2.41509C4.01493 0.805031 5.9772 0 8.29574 0C10.6143 0 12.5786 0.803585 14.1887 2.41075C15.7987 4.0179 16.6038 5.98161 16.6038 8.30189C16.6038 9.33333 16.4151 10.3396 16.0377 11.3208C15.6604 12.3019 15.1698 13.1321 14.566 13.8113L24 23.2453L23.2453 24ZM8.30189 15.5472C10.3396 15.5472 12.0566 14.8491 13.4528 13.4528C14.8491 12.0566 15.5472 10.3396 15.5472 8.30189C15.5472 6.26415 14.8491 4.54717 13.4528 3.15094C12.0566 1.75472 10.3396 1.0566 8.30189 1.0566C6.26415 1.0566 4.54717 1.75472 3.15094 3.15094C1.75472 4.54717 1.0566 6.26415 1.0566 8.30189C1.0566 10.3396 1.75472 12.0566 3.15094 13.4528C4.54717 14.8491 6.26415 15.5472 8.30189 15.5472Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search-bar end -->
+
+        <!-- Search-bar end  -->
+
+        <!-- About us start  -->
+        <section id="About_us">
+            <div class="about_us-top">
+                <div class="about_us-title-block">
+                    <h2 class="about_us-title">Про нас</h2>
+                    <div class="about_us-link">
+                        <a href="#" target="_blank">
+                            <div class="learn-more">
+                                <span>Дивитися більше</span><i class="icon-arrow"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="about_us-description">
+                    <div class="about_us-item">
+                        <span>SafeTalk </span>
+                        надає користувачам дружній, безпечний та прозорий веб-інструмент для виявлення і виявлення
+                        потенційно шахрайських та небезпечних телефонних номерів, а також для обміну важливою
+                        інформацією про них.
+                    </div>
+                    <div class="about_us-item">
+                        <b>Наша мета</b> — створити надійне середовище, де користувачі можуть вільно ділитися відгуками
+                        та інформацією про підозрілі номери, тим самим зміцнюючи взаємну підтримку та впевненість у
+                        безпеці своїх телефонних розмов.
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_us-bottom">
+                <div class="about_us-bottom-description">
+                    <div class="block-wrapper">
+                        <i class="icon-about-us-1 icons"></i>
+                        <h3 class="about_us-title">Спільнота і Відкритість</h3>
+                    </div>
+                    <div class="about_us-block-description-item">
+                        <p>SafeTalk пропонує активну спільноту користувачів, яка регулярно ділиться відгуками та
+                            оцінками телефонних номерів, допомагаючи іншим ідентифікувати потенційно шахрайські або
+                            небезпечні дзвінки.</p>
+                        <p>Відкритий доступ до рейтингів та відгуків дозволяє користувачам легко переглядати інформацію
+                            про конкретні номери та вирішувати, чи варто відповідати на дзвінок.
+                        </p>
+                    </div>
+                </div>
+                <div class="about_us-bottom-description">
+                    <div class="block-wrapper">
+                        <i class="icon-about-us-2 icons"></i>
+                        <h3 class="about_us-title">Технологічні Інновації</h3>
+                    </div>
+                    <div class="about_us-block-description-item">
+                        <p>Наша платформа використовує автоматизовані технології для ефективного збору, аналізу та
+                            верифікації даних, що гарантує актуальність та достовірність інформації. </p>
+                        <span>Крім того, розроблений нами API дозволяє легко інтегрувати SafeTalk з іншими платформами,
+                            що
+                            забезпечує широкий доступ до наших сервісів та розширює можливості захисту від шахрайства.
+                        </span>
+                    </div>
+                </div>
+                <div class="about_us-bottom-description">
+                    <div class="block-wrapper">
+                        <i class="icon-about-us-3 icons"></i>
+                        <h3 class="about_us-title">Безпека та Приватність</h3>
+                    </div>
+                    <div class="about_us-block-description-item">
+                        <p>SafeTalk впроваджує процедуру верифікації користувачів за допомогою SMS, що значно зміцнює
+                            довіру до наданої інформації та відгуків.</p>
+                        <p>Дотримання строгих стандартів захисту персональних даних є нашим пріоритетом, тому ми
+                            гарантуємо високий рівень приватності наших користувачів.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About us end  -->
+
+
+        <!-- For_partners start  -->
+        <section id="For_partners">
+            <div class="for_partners-block">
+                <div class="for_partners-top">
+                    <h2 class="for_partners-title">Партнерам</h2>
+                    <div class="for_partners-link">
+                        <a href="#" target="_blank">
+                            <div class="learn-more">
+                                <span>Дивитися більше</span><i class="icon-arrow"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="for_partners-description">
+                    <div class="for_partners-column">
+                        <div class="for_partners-box">
+                            <div class="for_partners-nummer"> 01 </div>
+                            <div class="for_partners-item">
+                                <h3>Інтеграція та Обмін Даними</h3>
+                                <div class="for_partners-text">
+                                    Наш API відкриває можливість для інтеграції та обміну інформацією про телефонні
+                                    номери
+                                    між вашою платформою та нашою базою даних. Наша особливість - що ми активно збираємо
+                                    дані завдяки функціоналу нашого сайту, формуємо надійну базу даних для подальшого
+                                    обміну
+                                    з партнерами.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for_partners-box">
+                            <div class="for_partners-nummer"> 02 </div>
+                            <div class="for_partners-item">
+                                <h3>Безкоштовний Доступ для Спільнот</h3>
+                                <div class="for_partners-text">
+                                    Ми надаємо безкоштовний доступ до нашого API для спільнот та дата-провайдерів, що
+                                    сприяє
+                                    взаємному зміцненню захисту від шахрайства та підвищенню довіри користувачів.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="for_partners-column">
+                        <div class="for_partners-box">
+                            <div class="for_partners-nummer"> 03 </div>
+                            <div class="for_partners-item">
+                                <h3>Співпраця з Дата-Провайдерами</h3>
+                                <div class="for_partners-text">
+                                    Співпраця з дата-провайдерами дозволяє нам об’єднувати зусилля у виявленні та
+                                    аналізі
+                                    потенційно шахрайських діяльностей, що розширює нашу базу даних та підвищує захист
+                                    від
+                                    підозрілих дзвінків
+                                </div>
+                            </div>
+                        </div>
+                        <div class="for_partners-box">
+                            <div class="for_partners-nummer"> 04 </div>
+                            <div class="for_partners-item">
+                                <h3>Доступ до Передових Технологій</h3>
+                                <div class="for_partners-text">
+                                    Співпрацюючи з нами, ви отримаєте доступ до передових технологій у галузі
+                                    телекомунікаційної безпеки. Наше API відкриває широкі можливості для боротьби з
+                                    телефонним шахрайством, що допоможе покращити безпеку та довіру ваших клієнтів.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- For_partners end  -->
+
+        <!-- Useful information start  -->
+        <section id="useful-info">
+            <div class="info-head">
+                <h2>Корисна інформація</h2>
+                <a href="#">
+                    <div class="learn-more">
                         <span>Дивитися більше</span><i class="icon-arrow"></i>
-                     </div>
-                  </a>
-               </div>
+                    </div>
+                </a>
             </div>
-            <div class="about_us-description">
-               <div class="about_us-item">
-                  <span>SafeTalk </span>
-                  надає користувачам дружній, безпечний та прозорий веб-інструмент для виявлення і виявлення
-                  потенційно шахрайських та небезпечних телефонних номерів, а також для обміну важливою
-                  інформацією про них.
-               </div>
-               <div class="about_us-item">
-                  <b>Наша мета</b> — створити надійне середовище, де користувачі можуть вільно ділитися відгуками
-                  та інформацією про підозрілі номери, тим самим зміцнюючи взаємну підтримку та впевненість у
-                  безпеці своїх телефонних розмов.
-               </div>
+            <div class="info-posts">
+                <div class="post">
+                    <a href="https://www.5.ua/dv/life/280058" target="_blank">
+                        <img src="./src/images/useful-info/post-1.jpg" alt="Хакер за комп'ютером" />
+                    </a>
+                    <div class="post-data">
+                        <p class="date">20.10.2023</p>
+                        <p class="source">5.ua</p>
+                    </div>
+                    <a href="https://www.5.ua/dv/life/280058" target="_blank">
+                        <h3>Як захистити свої гроші в інтернеті - важливі правила</h3>
+                    </a>
+                </div>
+                <div class="post">
+                    <a href="https://promo.bank.gov.ua/stopfraud/" target="_blank">
+                        <img src="./src/images/useful-info/post-2.jpg" alt="Жінка з гучномовцем" />
+                    </a>
+                    <div class="post-data">
+                        <p class="date">15.10.2023</p>
+                        <p class="source">promo.bank.gov.ua</p>
+                    </div>
+                    <a href="https://promo.bank.gov.ua/stopfraud/" target="_blank">
+                        <h3>#шахрайгудбай</h3>
+                    </a>
+                </div>
+                <div class="post">
+                    <a href="https://www.ukrinform.ua/rubric-technology/3173858-ak-zahistiti-telefon-vid-sahraiv-ta-hakeriv-poradi-kiberpolicii.html"
+                        target="_blank">
+                        <img src="./src/images/useful-info/post-3.jpg" alt="Людина тримає смартфон" />
+                    </a>
+                    <div class="post-data">
+                        <p class="date">15.10.2023</p>
+                        <p class="source">ukrinform.ua</p>
+                    </div>
+                    <a href="https://www.ukrinform.ua/rubric-technology/3173858-ak-zahistiti-telefon-vid-sahraiv-ta-hakeriv-poradi-kiberpolicii.html"
+                        target="_blank">
+                        <h3>Як захистити телефон від шахраїв та хакерів - поради кіберполіції</h3>
+                    </a>
+                </div>
             </div>
-         </div>
+            <div class="info-videos">
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=4yQZpcrV-OU" target="_blank">
+                        <img src="./src/images/useful-info/video-image-1.jpg" alt="Заставка для відео" />
+                    </a>
+                    <div class="video-data">
+                        <p class="source">youtube.com</p>
+                        <h3>Як захистити себе від телефонних шахраїв?</h3>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://www.youtube.com/watch?v=w-GMMwgn3VU" target="_blank">
+                        <img src="./src/images/useful-info/video-image-2.jpg" alt="Заставка для відео" />
+                    </a>
+                    <div class="video-data">
+                        <p class="source">youtube.com</p>
+                        <h3>Шахрай може назватися будь-ким!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="info-audios">
+                <div class="audio">
+                    <a href="http://radio.suspilne.media/news.html?newsID=95999#:~:text=%23%20%E3%80%9010%E2%80%A0%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82,%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%D0%B2%20%D0%BF%D0%BE%D0%BD%D0%B0%D0%B4%20250%20%D0%BC%D1%96%D0%BB%D1%8C%D0%B9%D0%BE%D0%BD%D1%96%D0%B2%20%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C"
+                        target="_blank">
+                        <img src="./src/images/useful-info/audio-image.jpg" alt="Рука тягнеться за гаманцем" />
+                    </a>
+                    <div class="audio-data">
+                        <div class="audio-source">
+                            <i class="icon-speaker"></i>
+                            <p class="source">radio.suspilne.media</p>
+                        </div>
+                        <a href="http://radio.suspilne.media/news.html?newsID=95999#:~:text=%23%20%E3%80%9010%E2%80%A0%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82,%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%D0%B2%20%D0%BF%D0%BE%D0%BD%D0%B0%D0%B4%20250%20%D0%BC%D1%96%D0%BB%D1%8C%D0%B9%D0%BE%D0%BD%D1%96%D0%B2%20%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C"
+                            target="_blank">
+                            <h3>Інтернет-шахрайство: як розпізнати шахраїв та куди звертатись, якщо вас ошукали в мережі
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Useful information end  -->
 
-         <div class="about_us-bottom">
-            <div class="about_us-bottom-description">
-               <div class="block-wrapper">
-                  <i class="icon-about-us-1 icons"></i>
-                  <h3 class="about_us-title">Спільнота і Відкритість</h3>
-               </div>
-               <div class="about_us-block-description-item">
-                  <p>SafeTalk пропонує активну спільноту користувачів, яка регулярно ділиться відгуками та
-                     оцінками телефонних номерів, допомагаючи іншим ідентифікувати потенційно шахрайські або
-                     небезпечні дзвінки.</p>
-                  <p>Відкритий доступ до рейтингів та відгуків дозволяє користувачам легко переглядати інформацію
-                     про конкретні номери та вирішувати, чи варто відповідати на дзвінок.
-                  </p>
-               </div>
+        <!-- Contacts start  -->
+        <section id="contacts">
+            <div class="contacts-head">
+                <h2>Контакти</h2>
             </div>
-            <div class="about_us-bottom-description">
-               <div class="block-wrapper">
-                  <i class="icon-about-us-2 icons"></i>
-                  <h3 class="about_us-title">Технологічні Інновації</h3>
-               </div>
-               <div class="about_us-block-description-item">
-                  <p>Наша платформа використовує автоматизовані технології для ефективного збору, аналізу та
-                     верифікації даних, що гарантує актуальність та достовірність інформації. </p>
-                  <p>Крім того, розроблений нами API дозволяє легко інтегрувати SafeTalk з іншими платформами, що
-                     забезпечує широкий доступ до наших сервісів та розширює можливості захисту від шахрайства.
-                  </p>
-               </div>
+            <div class="contacts-body">
+                <div class="contacts-form">
+                    <h3>Виникли питання?</h3>
+                    <h3>Напишіть нам, ми відповімо!</h3>
+                    <form id="contact-me">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="*Ваш телефон"
+                            required>
+                        <input type="text" class="form-control" id="user-name" name="user_name" placeholder="*Ваше ім’я"
+                            required>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Повідомлення"></textarea>
+                        <button id="contact-me-btn" type="submit" class="btn mb-3">зателефонуйте мені</button>
+                    </form>
+                </div>
+                <div class="contacts-info">
+                    <div class="contacts-info-item">
+                        <a href="tel:+ 38 (099) 111 22 33" target="_blank">
+                            <i class="icon-call"></i>
+                        </a>
+                        <div class="contacts-info-item-text">
+                            <h4>Контактний телефон</h4>
+                            <a href="tel:+ 38 (099) 111 22 33" target="_blank">
+                                <p>+ 38 (099) 111 22 33</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-info-item">
+                        <a href="mailto:safeTalk@gmail.com" target="_blank">
+                            <i class="icon-envelop"></i>
+                        </a>
+                        <div class="contacts-info-item-text">
+                            <h4>Електронна пошта</h4>
+                            <a href="mailto:safeTalk@gmail.com">
+                                <p>SafeTalk@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-info-item">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <div class="contacts-info-item-text">
+                            <h4>Інстаграм</h4>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <p>SafeTalk</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="about_us-bottom-description">
-               <div class="block-wrapper">
-                  <i class="icon-about-us-3 icons"></i>
-                  <h3 class="about_us-title">Безпека та Приватність</h3>
-               </div>
-               <div class="about_us-block-description-item">
-                  <p>SafeTalk впроваджує процедуру верифікації користувачів за допомогою SMS, що значно зміцнює
-                     довіру до наданої інформації та відгуків.</p>
-                  <p>Дотримання строгих стандартів захисту персональних даних є нашим пріоритетом, тому ми
-                     гарантуємо високий рівень приватності наших користувачів.
-                  </p>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- About us end  -->
+        </section>
+        <!-- Contacts end  -->
 
-      <!-- For_partners start  -->
-      <section id="For_partners">
-         <div class="for_partners-block">
-            <div class="for_partners-top">
-               <h2 class="for_partners-title">ПАРТНЕРАМ</h2>
-               <div class="for_partners-link">
-                  <a href="#" target="_blank">
-                     <div class="learn-more">
-                        <span>Дивитися більше</span><i class="icon-arrow"></i>
-                     </div>
-                  </a>
-               </div>
+        <!-- footer start -->
+        <footer>
+            <div class="logo">
+                <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
             </div>
-            <div class="for_partners-description">
-               <div class="for_partners-column">
-                  <div class="for_partners-nummer"> 01 </div>
-                  <div class="for_partners-item">
-                     <h3>Інтеграція та Обмін Даними</h3>
-                     <div class="for_partners-text">
-                        Наш API відкриває можливість для інтеграції та обміну інформацією про телефонні номери
-                        між вашою платформою та нашою базою даних. Наша особливість - що ми активно збираємо
-                        дані завдяки функціоналу нашого сайту, формуємо надійну базу даних для подальшого обміну
-                        з партнерами.
-                     </div>
-                  </div>
-                  <div class="for_partners-nummer"> 02 </div>
-                  <div class="for_partners-item">
-                     <h3>Безкоштовний Доступ для Спільнот</h3>
-                     <div class="for_partners-text">
-                        Ми надаємо безкоштовний доступ до нашого API для спільнот та дата-провайдерів, що сприяє
-                        взаємному зміцненню захисту від шахрайства та підвищенню довіри користувачів.
-                     </div>
-                  </div>
-               </div>
-               <div class="for_partners-column">
-                  <div class="for_partners-nummer"> 03 </div>
-                  <div class="for_partners-item">
-                     <h3>Співпраця з Дата-Провайдерами</h3>
-                     <div class="for_partners-text">
-                        Співпраця з дата-провайдерами дозволяє нам об’єднувати зусилля у виявленні та аналізі
-                        потенційно шахрайських діяльностей, що розширює нашу базу даних та підвищує захист від
-                        підозрілих дзвінків
-                     </div>
-                  </div>
-                  <div class="for_partners-nummer"> 04 </div>
-                  <div class="for_partners-item">
-                     <h3>Доступ до Передових Технологій</h3>
-                     <div class="for_partners-text">
-                        Співпрацюючи з нами, ви отримаєте доступ до передових технологій у галузі
-                        телекомунікаційної безпеки. Наше API відкриває широкі можливості для боротьби з
-                        телефонним шахрайством, що допоможе покращити безпеку та довіру ваших клієнтів.
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- For_partners end  -->
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="#About_us">Про нас</a></li>
+                    <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
+                    <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- footer end -->
 
-      <!-- Useful information start  -->
-      <section id="useful-info">
-         <div class="info-head">
-            <h2>Корисна інформація</h2>
-            <a href="#">
-               <div class="learn-more">
-                  <span>Дивитися більше</span><i class="icon-arrow"></i>
-               </div>
-            </a>
-         </div>
-         <div class="info-posts">
-            <div class="post">
-               <a href="https://www.5.ua/dv/life/280058" target="_blank">
-                  <img src="./src/images/useful-info/post-1.jpg" alt="Хакер за комп'ютером" />
-               </a>
-               <div class="post-data">
-                  <p class="date">20.10.2023</p>
-                  <p class="source">5.ua</p>
-               </div>
-               <a href="https://www.5.ua/dv/life/280058" target="_blank">
-                  <h3>Як захистити свої гроші в інтернеті - важливі правила</h3>
-               </a>
-            </div>
-            <div class="post">
-               <a href="https://promo.bank.gov.ua/stopfraud/" target="_blank">
-                  <img src="./src/images/useful-info/post-2.jpg" alt="Жінка з гучномовцем" />
-               </a>
-               <div class="post-data">
-                  <p class="date">15.10.2023</p>
-                  <p class="source">promo.bank.gov.ua</p>
-               </div>
-               <a href="https://promo.bank.gov.ua/stopfraud/" target="_blank">
-                  <h3>#шахрайгудбай</h3>
-               </a>
-            </div>
-            <div class="post">
-               <a href="https://www.ukrinform.ua/rubric-technology/3173858-ak-zahistiti-telefon-vid-sahraiv-ta-hakeriv-poradi-kiberpolicii.html"
-                  target="_blank">
-                  <img src="./src/images/useful-info/post-3.jpg" alt="Людина тримає смартфон" />
-               </a>
-               <div class="post-data">
-                  <p class="date">15.10.2023</p>
-                  <p class="source">ukrinform.ua</p>
-               </div>
-               <a href="https://www.ukrinform.ua/rubric-technology/3173858-ak-zahistiti-telefon-vid-sahraiv-ta-hakeriv-poradi-kiberpolicii.html"
-                  target="_blank">
-                  <h3>Як захистити телефон від шахраїв та хакерів - поради кіберполіції</h3>
-               </a>
-            </div>
-         </div>
-         <div class="info-videos">
-            <div class="video">
-               <a href="https://www.youtube.com/watch?v=4yQZpcrV-OU" target="_blank">
-                  <img src="./src/images/useful-info/video-image-1.jpg" alt="Заставка для відео" />
-               </a>
-               <div class="video-data">
-                  <p class="source">youtube.com</p>
-                  <h3>Як захистити себе від телефонних шахраїв?</h3>
-               </div>
-            </div>
-            <div class="video">
-               <a href="https://www.youtube.com/watch?v=w-GMMwgn3VU" target="_blank">
-                  <img src="./src/images/useful-info/video-image-2.jpg" alt="Заставка для відео" />
-               </a>
-               <div class="video-data">
-                  <p class="source">youtube.com</p>
-                  <h3>Шахрай може назватися будь-ким!</h3>
-               </div>
-            </div>
-         </div>
-         <div class="info-audios">
-            <div class="audio">
-               <a href="http://radio.suspilne.media/news.html?newsID=95999#:~:text=%23%20%E3%80%9010%E2%80%A0%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82,%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%D0%B2%20%D0%BF%D0%BE%D0%BD%D0%B0%D0%B4%20250%20%D0%BC%D1%96%D0%BB%D1%8C%D0%B9%D0%BE%D0%BD%D1%96%D0%B2%20%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C"
-                  target="_blank">
-                  <img src="./src/images/useful-info/audio-image.jpg" alt="Рука тягнеться за гаманцем" />
-               </a>
-               <div class="audio-data">
-                  <div class="audio-source">
-                     <i class="icon-speaker"></i>
-                     <p class="source">radio.suspilne.media</p>
-                  </div>
-                  <a href="http://radio.suspilne.media/news.html?newsID=95999#:~:text=%23%20%E3%80%9010%E2%80%A0%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82,%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%D0%B2%20%D0%BF%D0%BE%D0%BD%D0%B0%D0%B4%20250%20%D0%BC%D1%96%D0%BB%D1%8C%D0%B9%D0%BE%D0%BD%D1%96%D0%B2%20%D0%B3%D1%80%D0%B8%D0%B2%D0%B5%D0%BD%D1%8C"
-                     target="_blank">
-                     <h3>Інтернет-шахрайство: як розпізнати шахраїв та куди звертатись, якщо вас ошукали в мережі
-                     </h3>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Useful information end  -->
-
-      <!-- Contacts start  -->
-      <section id="contacts">
-         <div class="contacts-head">
-            <h2>Контакти</h2>
-         </div>
-         <div class="contacts-body">
-            <div class="contacts-form">
-               <h3>Виникли питання?</h3>
-               <h3>Напишіть нам, ми відповімо!</h3>
-               <form id="contact-me">
-                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="*Ваш телефон" required>
-                  <input type="text" class="form-control" id="user-name" name="user_name" placeholder="*Ваше ім’я"
-                     required>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                     placeholder="Повідомлення"></textarea>
-                  <button id="contact-me-btn" type="submit" class="btn mb-3">зателефонуйте мені</button>
-               </form>
-            </div>
-            <div class="contacts-info">
-               <div class="contacts-info-item">
-                  <a href="tel:+ 38 (099) 111 22 33" target="_blank">
-                     <i class="icon-call"></i>
-                  </a>
-                  <div class="contacts-info-item-text">
-                     <h4>Контактний телефон</h4>
-                     <a href="tel:+ 38 (099) 111 22 33" target="_blank">
-                        <p>+ 38 (099) 111 22 33</p>
-                     </a>
-                  </div>
-               </div>
-               <div class="contacts-info-item">
-                  <a href="mailto:safeTalk@gmail.com" target="_blank">
-                     <i class="icon-envelop"></i>
-                  </a>
-                  <div class="contacts-info-item-text">
-                     <h4>Електронна пошта</h4>
-                     <a href="mailto:safeTalk@gmail.com">
-                        <p>SafeTalk@gmail.com</p>
-                     </a>
-                  </div>
-               </div>
-               <div class="contacts-info-item">
-                  <a href="https://www.instagram.com/" target="_blank">
-                     <i class="icon-instagram"></i>
-                  </a>
-                  <div class="contacts-info-item-text">
-                     <h4>Інстаграм</h4>
-                     <a href="https://www.instagram.com/" target="_blank">
-                        <p>SafeTalk</p>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Contacts end  -->
-
-      <!-- footer start -->
-      <footer>
-         <div class="logo">
-            <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
-         </div>
-         <nav class="menu-nav">
-            <ul>
-               <li class="menu-item"><a href="#Search-bar">Перевірити номер телефону</a></li>
-               <li class="menu-item"><a href="#About_us">Про нас</a></li>
-               <li class="menu-item"><a href="#For_partners">Партнерам</a></li>
-               <li class="menu-item"><a href="#useful-info">Корисна інформація</a></li>
-            </ul>
-         </nav>
-      </footer>
-      <!-- footer end -->
-
-   </div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
-   <script src="./src/js/javascript.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="./src/js/javascript.js"></script>
 </body>
 
 </html>
