@@ -1219,4 +1219,39 @@ footer .logo {
    }
 
    /* Contacts end */
+
+   /* login-signup start */
+   #login-signup {
+      margin: 0 -16px;
+      background-color: var(--background-color);
+      border-radius: 10px;
+      padding: 24px 16px;
+      text-align: center;
+   }
+
+   #login-signup h2 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+      color: var(--text-light-color);
+      text-align: center;
+   }
+
+   #login-signup .login-signup-buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 24px;
+      /* text-align: center; */
+   }
+
+   #login-signup .login-signup-buttons button {
+      padding: 8px;
+   }
+
+   #login-signup .login-signup-buttons #login {
+      margin-top: 8px;
+   }
+
+   /* login-signup end */
 }
