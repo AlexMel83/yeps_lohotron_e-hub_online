@@ -3,46 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-hub</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/icomoon.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>E-hub</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./src/css/icomoon.css">
+   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <!-- header start -->
-        <header>
-            <div class="logo">
-                <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
-            </div>
-            <nav class="menu-nav">
-                <ul>
-                    <li class="menu-item"><a href="index.html#Search-bar">Перевірити номер телефону</a></li>
-                    <li class="menu-item"><a href="index.html#About_us">Про нас</a></li>
-                    <li class="menu-item"><a href="index.html#For_partners">Партнерам</a></li>
-                    <li class="menu-item"><a href="index.html#useful-info">Корисна інформація</a></li>
-                    <li class="menu-item"><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="header_button-wrapper">
-                <button class="header_button">Вхід</button>
-                <button class="header_button">Реєстрація</button>
-            </div>
-        </header>
-        <!-- header end -->
-        <div class="main-content">
+<div class="main-block">
+   <!-- header start -->
+   <header class="header">
+       <div class="container">
+           <div class="header_body">
+               <a href="#" class="header_logo">
+                   <img src="src/images/SafeTalk_logo.png" alt="SafeTalk_logo">
+               </a>
+               <div class="icon-wrapper">
+                   <div class="header_icon">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                           fill="none">
+                           <path
+                               d="M1.09091 21.8961C2.49351 20.5195 4.12338 19.4351 5.98052 18.6429C7.83766 17.8506 9.84416 17.4545 12 17.4545C14.1558 17.4545 16.1623 17.8506 18.0195 18.6429C19.8766 19.4351 21.5065 20.5195 22.9091 21.8961V2.33766C22.9091 2.02597 22.7792 1.74026 22.5195 1.48052C22.2597 1.22078 21.974 1.09091 21.6623 1.09091H2.33766C2.02597 1.09091 1.74026 1.22078 1.48052 1.48052C1.22078 1.74026 1.09091 2.02597 1.09091 2.33766V21.8961ZM12 13.7143C13.2468 13.7143 14.2987 13.2857 15.1558 12.4286C16.013 11.5714 16.4416 10.5195 16.4416 9.27273C16.4416 8.02597 16.013 6.97403 15.1558 6.11688C14.2987 5.25974 13.2468 4.83117 12 4.83117C10.7532 4.83117 9.7013 5.25974 8.84416 6.11688C7.98701 6.97403 7.55844 8.02597 7.55844 9.27273C7.55844 10.5195 7.98701 11.5714 8.84416 12.4286C9.7013 13.2857 10.7532 13.7143 12 13.7143ZM2.33766 24C1.66234 24 1.1039 23.7792 0.662338 23.3377C0.220779 22.8961 0 22.3377 0 21.6623V2.33766C0 1.66234 0.220779 1.1039 0.662338 0.662338C1.1039 0.220779 1.66234 0 2.33766 0H21.6623C22.3377 0 22.8961 0.220779 23.3377 0.662338C23.7792 1.1039 24 1.66234 24 2.33766V21.6623C24 22.3377 23.7792 22.8961 23.3377 23.3377C22.8961 23.7792 22.3377 24 21.6623 24H2.33766ZM1.94805 22.9091H22.0519V22.6753C20.5974 21.2727 19.0195 20.2338 17.3182 19.5584C15.6169 18.8831 13.8442 18.5455 12 18.5455C10.2078 18.5455 8.45455 18.8766 6.74026 19.539C5.02597 20.2013 3.42857 21.2208 1.94805 22.5974V22.9091ZM12 12.6234C11.0909 12.6234 10.3052 12.2922 9.64286 11.6299C8.98052 10.9675 8.64935 10.1818 8.64935 9.27273C8.64935 8.36364 8.98052 7.57792 9.64286 6.91558C10.3052 6.25325 11.0909 5.92208 12 5.92208C12.9091 5.92208 13.6948 6.25325 14.3571 6.91558C15.0195 7.57792 15.3506 8.36364 15.3506 9.27273C15.3506 10.1818 15.0195 10.9675 14.3571 11.6299C13.6948 12.2922 12.9091 12.6234 12 12.6234Z"
+                               fill="white" />
+                       </svg>
+                   </div>
+                   <div class="header_burger">
+                       <span></span>
+                   </div>
+               </div>
+               <nav class="header_menu">
+                   <ul class="header_list">
+                       <li>
+                           <a href="index#Search-bar" class="header_link">Перевірити номер телефону</a>
+                       </li>
+                       <li>
+                           <a href="index#About_us" class="header_link">Про нас </a>
+                       </li>
+                       <li>
+                           <a href="index#For_partners" class="header_link">Партнерам</a>
+                       </li>
+                       <li>
+                           <a href="index#useful-info" class="header_link">Корисна інформація</a>
+                       </li>
+                       <li>
+                           <a href="index#contacts" class="header_link">Контакти</a>
+                       </li>
+                   </ul>
+                   <div class="header_button-wrapper-mobile">
+                       <button class="header_button">Вхід</button>
+                       <button class="header_button">Реєстрація</button>
+                   </div>
+               </nav>
+               <div class="header_button-wrapper">
+                   <button class="header_button">Вхід</button>
+                   <button class="header_button">Реєстрація</button>
+               </div>
+           </div>
+       </div>
+   </header>
+   <!-- header end -->
 
-            <!-- Search_results start -->
-            <section id="Search_results">
-                <div class="search_results-box">
-                    <div class="search_results-text positiv neutral" id="neutral">
-                        <div class="search_results-icon">
-                            <img src="./src/images/unknown_number.png" alt="Dislace">
-                        </div>
-                        <div class="search_results-descripton">
+   <div class="main-content">
+       
+       <!-- Search_results start -->
+       <section id="Search_results">
+           <div class="search_results-box">
+               <div class="search_results-text positiv neutral" id="neutral">
+                   <div class="search_results-icon">
+                       <img src="./src/images/unknown_number.png" alt="Dislace">
+                    </div>
+                    <div class="search_results-descripton">
                             <h2 class="phone-number"> +380360360363</h2>
                             <div class="search_results-descripton-bottom">
                                 На жаль, номер <span class="phone-number">+380360360363</span> не знайдено в нашій базі
@@ -57,6 +91,7 @@
                     <button id="addPhone">Бажаєте додати цей номер до бази даних?</button>
                 </div>
             </section>
+            <!-- search_results end -->
 
             <!-- login-signup start -->
             <section id="login-signup">
@@ -100,10 +135,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
             <!-- review-form end -->
-        </div>
-        <!-- search_results end -->
+         </div>
 
         <!-- footer start -->
         <footer>
@@ -112,15 +146,20 @@
             </div>
             <nav class="menu-nav">
                 <ul>
-                    <li class="menu-item"><a href="index.html#Search-bar">Перевірити номер телефону</a></li>
-                    <li class="menu-item"><a href="index.html#About_us">Про нас</a></li>
-                    <li class="menu-item"><a href="index.html#For_partners">Партнерам</a></li>
-                    <li class="menu-item"><a href="index.html#useful-info">Корисна інформація</a></li>
+                    <li class="menu-item"><a href="index#Search-bar">Перевірити номер телефону</a></li>
+                    <li class="menu-item"><a href="index#About_us">Про нас</a></li>
+                    <li class="menu-item"><a href="index#For_partners">Партнерам</a></li>
+                    <li class="menu-item"><a href="index#useful-info">Корисна інформація</a></li>
+                    <li class="menu-item"><a href="index#contacts">Контакти</a></li>
                 </ul>
             </nav>
         </footer>
-    </div>
     <!-- footer end -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script src="./src/js/javascript.js"></script>
 </body>
