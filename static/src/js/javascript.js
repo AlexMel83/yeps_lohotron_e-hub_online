@@ -5,8 +5,7 @@ $(document).ready(function(){
     });
 });
 
-$('.header_link').click(function() {
-    // Скрываем меню
+$('.header_link').click(function() {       
     $('.header_burger, .header_menu, header, .header_icon').removeClass('active');
     $('body').removeClass('lock');
   });
