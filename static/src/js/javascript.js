@@ -1,9 +1,15 @@
 $(document).ready(function(){
     $('.header_burger').click(function(event){
         $('.header_burger, .header_menu, header, .header_icon').toggleClass('active');
-        $('body').toggleClass('lock');   //добавляем клаас для блокировки скрола при активации бургер меню
+        $('body').toggleClass('lock');   
     });
 });
+
+$('.header_link').click(function() {
+    // Скрываем меню
+    $('.header_burger, .header_menu, header, .header_icon').removeClass('active');
+    $('body').removeClass('lock');
+  });
 
 
 $(document).ready(function () {
