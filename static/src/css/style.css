@@ -875,7 +875,7 @@ footer .logo {
     display: block;
 }
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{
-    color: #000;    
+    color: #000;
     font-size: 12px;
     display: block;
     margin-top: 16px;
@@ -1061,6 +1061,9 @@ footer .logo {
     margin-top: 16px;
 }
 
+#review-form .review-form-wrap #review-btn-mobile {
+   display: none;
+}
 
 /* review-form end */
 
@@ -1778,8 +1781,8 @@ footer .logo {
     }
     #Search_results .search_results-box {
         display: flex;
-        flex-direction: column;  
-        margin-bottom: 24px;       
+        flex-direction: column;
+        margin-bottom: 24px;
     }
 
     #Search_results .search_results-box #neutral {
@@ -2489,7 +2492,7 @@ footer .logo {
         /* footer start */
         footer {
             padding: 24px 16px;
-            flex-direction: column;           
+            flex-direction: column;
             height: 278px;
             margin: 0px -16px 0px -16px;
         }
@@ -2523,7 +2526,7 @@ footer .logo {
         }
 
         /* footer end */
-        
+
     #Search_results .search_results-box #reliable{
         width: 100%;
         /* margin-bottom: -18px; */
@@ -2541,21 +2544,21 @@ footer .logo {
         padding: 0;
         /* border: none; */
     }
-    #Search_results .search_results-box .search_results-text .search_results-descripton {        
+    #Search_results .search_results-box .search_results-text .search_results-descripton {
         width: 100%;
         margin-left: 16px;
     }
     #Search_results .search_results-box .search_results-text .search_results-descripton .search_results-descripton-bottom {
         font-size: 12px;
     }
-    #Search_results .search_results-box .search_results-text { 
+    #Search_results .search_results-box .search_results-text {
         padding: 16px 16px 32px 16px;
-       
+
     }
 
     #Search_results .search_results-box .search_results-amount .search_results-item .search_results-top {
         font-size: 20px;
-        margin: 8px 0 0 0;      
+        margin: 8px 0 0 0;
     }
     #Search_results .search_results-box .search_results-amount .search_results-item .search_results-bottom {
         font-size: 12px;
@@ -2569,7 +2572,7 @@ footer .logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
     #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes{
         width: 100%;
@@ -2589,10 +2592,136 @@ footer .logo {
     #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart  img{
         width: 100%;
         margin: 16px;
-    }    
-    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{      
+    }
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{
         margin-top: 8px;
     }
+
+    /* login-signup start */
+   #login-signup {
+      margin: 0 -16px;
+      background-color: var(--background-color);
+      border-radius: 10px;
+      padding: 24px 16px;
+      text-align: center;
+   }
+
+   #login-signup h2 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+      color: var(--text-light-color);
+      text-align: center;
+   }
+
+   #login-signup .login-signup-buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 24px;
+   }
+
+   #login-signup .login-signup-buttons button {
+      padding: 8px;
+   }
+
+   #login-signup .login-signup-buttons #login {
+      margin-top: 8px;
+   }
+
+   /* login-signup end */
+
+   /* review-form start */
+   #review-form {
+      margin: 40px auto;
+      max-width: 288px;
+   }
+
+   #review-form h2 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 100%;
+      margin-bottom: 16px;
+      color: var(--text-black-color);
+   }
+
+   #review-form .review-form-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: var(--background-form-inactive);
+      padding: 16px 8px 16px 8px;
+      border-radius: 10px;
+      margin: 0 auto;
+   }
+
+   #review-form .review-form-wrap form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #review-form .review-form-wrap form input {
+      height: 40px;
+   }
+
+   #review-form .review-form-wrap form textarea {
+      height: 70px;
+      margin-top: 20px;
+      padding-top: 13px;
+   }
+
+   #review-form .review-form-wrap form input::placeholder,
+   #review-form .review-form-wrap form textarea::placeholder {
+      font-size: 12px;
+   }
+
+   #review-form .review-form-wrap form .add-file {
+      font-size: 14px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+   }
+
+   #review-form .review-form-wrap form .file-field p {
+      font-size: 12px;
+      padding: 8px;
+   }
+
+   #review-form .review-form-wrap form button {
+      display: none;
+   }
+
+   #review-form .review-form-wrap #review-btn-mobile {
+      display: block;
+      margin-top: 24px;
+      background-color: var(--background-form-button);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: var(--text-light-color);
+      border: 1px solid var(--border-gray-color);
+      border-radius: 10px;
+      padding: 13px 0;
+   }
+
+   #review-form .review-form-wrap .review-icons {
+      margin-right: 0;
+      margin-top: 24px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item {
+      margin: 0 8px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item img {
+      width: 40px;
+      height: 40px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item p {
+      font-size: 12px;
+      margin-top: 16px;
+   }
+
+   /* review-form end */
 }
-
-
