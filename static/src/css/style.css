@@ -870,9 +870,15 @@ footer .logo {
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items {
     width: 50%;
 }
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items img{
+    width: 60px;
+    display: block;
+}
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{
     color: #000;    
     font-size: 12px;
+    display: block;
+    margin-top: 16px;
 }
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes {
     display: flex;
@@ -881,7 +887,8 @@ footer .logo {
     padding-left: 32px;
 }
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart img{
-    max-width: 200px;
+    width: 100%;
+    max-width: 350px;
 }
 
 #Search_results .search_results-rating-images .search_results-rating-chart {
@@ -2581,10 +2588,10 @@ footer .logo {
     }
     #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart  img{
         width: 100%;
-        margin-bottom: 16px;
+        margin: 16px;
     }    
-    #Search_results .search_results-box #search-results-reliable, #Search_results .search_results-box #search-results-reliable .search_results-item, #Search_results .search_results-rating #search-results-images-reliable, #Search_results .search_results-rating #search-results-images-reliable .search_results-rating-chart {
-
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{      
+        margin-top: 8px;
     }
 }
 
