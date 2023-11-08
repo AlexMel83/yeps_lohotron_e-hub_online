@@ -1799,13 +1799,11 @@ footer .logo {
         margin-bottom: 0;
     }
 
-    #Search_results .search_results-box .search_results-text .search_results-descripton {
+    /* #Search_results .search_results-box .search_results-text .search_results-descripton {
         width: 100%;
-    }
+    } */
 
-    #Search_results .search_results-box .search_results-text {
-        padding: 16px;
-    }
+   
     #Search_results .search_results-box .search_results-amount .search_results-item {
         padding: 16px;
     }
@@ -2527,7 +2525,7 @@ footer .logo {
 
         /* footer end */
 
-    #Search_results .search_results-box #reliable{
+    #Search_results .search_results-box {
         width: 100%;
         /* margin-bottom: -18px; */
     }
@@ -2536,17 +2534,27 @@ footer .logo {
     #Search_results .search_results-box #search-results-reliable,
     #Search_results .search_results-box #search-results-reliable .search_results-item,
     #Search_results .search_results-rating #search-results-images-reliable,
-    #Search_results .search_results-rating #search-results-images-reliable .search_results-rating-chart {
+    #Search_results .search_results-rating #search-results-images-reliable .search_results-rating-chart,
+    #Search_results .search_results-box .search_results-amount,
+    #Search_results .search_results-box .search_results-amount .search_results-item,
+    #Search_results .search_results-box .search_results-amount .search_results-rating-images.positiv,
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 0;
-        /* border: none; */
+        /* border-left: none; */
+    }
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart{
+        border-left: none;
     }
     #Search_results .search_results-box .search_results-text .search_results-descripton {
-        width: 100%;
-        margin-left: 16px;
+        width: 100%; 
+        margin-left: 16px;      
+    }
+    #Search_results .search_results-box .search_results-text.neutral .search_results-descripton {       
+        margin-left: 0;
     }
     #Search_results .search_results-box .search_results-text .search_results-descripton .search_results-descripton-bottom {
         font-size: 12px;
@@ -2555,7 +2563,6 @@ footer .logo {
         padding: 16px 16px 32px 16px;
 
     }
-
     #Search_results .search_results-box .search_results-amount .search_results-item .search_results-top {
         font-size: 20px;
         margin: 8px 0 0 0;
