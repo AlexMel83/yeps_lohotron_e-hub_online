@@ -763,7 +763,7 @@ footer .logo {
 #Search_results .search_results-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 48px;
+    margin: 24px 0px;
 }
 
 #Search_results .search_results-box .search_results-text {
@@ -844,6 +844,7 @@ footer .logo {
 #Search_results .search_results-box .search_results-amount .search_results-item .search_results-top {
     font-size: 30px;
     margin-bottom: 16px;
+    font-weight: 600;
 }
 
 #Search_results .search_results-box .search_results-amount .search_results-item .search_results-bottom {
@@ -869,12 +870,25 @@ footer .logo {
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items {
     width: 50%;
 }
-
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items img{
+    width: 60px;
+    display: block;
+}
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{
+    color: #000;    
+    font-size: 12px;
+    display: block;
+    margin-top: 16px;
+}
 #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes {
     display: flex;
     flex-direction: row;
     width: 50%;
     padding-left: 32px;
+}
+#Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart img{
+    width: 100%;
+    max-width: 350px;
 }
 
 #Search_results .search_results-rating-images .search_results-rating-chart {
@@ -1763,8 +1777,11 @@ footer .logo {
         margin-bottom: 40px;
     }
     #Search_results .search_results-box {
-        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;  
+        margin-bottom: 24px;       
     }
+
     #Search_results .search_results-box #neutral {
         display: flex;
         flex-direction: column;
@@ -1784,6 +1801,9 @@ footer .logo {
     }
 
     #Search_results .search_results-box .search_results-text {
+        padding: 16px;
+    }
+    #Search_results .search_results-box .search_results-amount .search_results-item {
         padding: 16px;
     }
 
@@ -2503,6 +2523,76 @@ footer .logo {
         }
 
         /* footer end */
+        
+    #Search_results .search_results-box #reliable{
+        width: 100%;
+        /* margin-bottom: -18px; */
     }
+
+
+    #Search_results .search_results-box #search-results-reliable,
+    #Search_results .search_results-box #search-results-reliable .search_results-item,
+    #Search_results .search_results-rating #search-results-images-reliable,
+    #Search_results .search_results-rating #search-results-images-reliable .search_results-rating-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        /* border: none; */
+    }
+    #Search_results .search_results-box .search_results-text .search_results-descripton {        
+        width: 100%;
+        margin-left: 16px;
+    }
+    #Search_results .search_results-box .search_results-text .search_results-descripton .search_results-descripton-bottom {
+        font-size: 12px;
+    }
+    #Search_results .search_results-box .search_results-text { 
+        padding: 16px 16px 32px 16px;
+       
+    }
+
+    #Search_results .search_results-box .search_results-amount .search_results-item .search_results-top {
+        font-size: 20px;
+        margin: 8px 0 0 0;      
+    }
+    #Search_results .search_results-box .search_results-amount .search_results-item .search_results-bottom {
+        font-size: 12px;
+        margin: 8px;
+    }
+    #Search_results .search_results-rating h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    #Search_results .search_results-rating .search_results-rating-images  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes{
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items img{
+        width: 40px;
+    }
+
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-chart  img{
+        width: 100%;
+        margin: 16px;
+    }    
+    #Search_results .search_results-rating .search_results-rating-images .search_results-rating-likes .search_results-rating-items  span{      
+        margin-top: 8px;
+    }
+}
 
 
