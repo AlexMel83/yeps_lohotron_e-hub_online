@@ -918,6 +918,9 @@ footer .logo {
    margin-top: 16px;
 }
 
+#review-form .review-form-wrap #review-btn-mobile {
+   display: none;
+}
 
 /* review-form end */
 
@@ -1242,7 +1245,6 @@ footer .logo {
       flex-direction: column-reverse;
       align-items: center;
       margin-top: 24px;
-      /* text-align: center; */
    }
 
    #login-signup .login-signup-buttons button {
@@ -1254,4 +1256,98 @@ footer .logo {
    }
 
    /* login-signup end */
+
+   /* review-form start */
+   #review-form {
+      margin: 40px auto;
+      max-width: 288px;
+   }
+
+   #review-form h2 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 100%;
+      margin-bottom: 16px;
+      color: var(--text-black-color);
+   }
+
+   #review-form .review-form-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: var(--background-form-inactive);
+      padding: 16px 8px 16px 8px;
+      border-radius: 10px;
+      margin: 0 auto;
+   }
+
+   #review-form .review-form-wrap form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #review-form .review-form-wrap form input {
+      height: 40px;
+   }
+
+   #review-form .review-form-wrap form textarea {
+      height: 70px;
+      margin-top: 20px;
+      padding-top: 13px;
+   }
+
+   #review-form .review-form-wrap form input::placeholder,
+   #review-form .review-form-wrap form textarea::placeholder {
+      font-size: 12px;
+   }
+
+   #review-form .review-form-wrap form .add-file {
+      font-size: 14px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+   }
+
+   #review-form .review-form-wrap form .file-field p {
+      font-size: 12px;
+      padding: 8px;
+   }
+
+   #review-form .review-form-wrap form button {
+      display: none;
+   }
+
+   #review-form .review-form-wrap #review-btn-mobile {
+      display: block;
+      margin-top: 24px;
+      background-color: var(--background-form-button);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: var(--text-light-color);
+      border: 1px solid var(--border-gray-color);
+      border-radius: 10px;
+      padding: 13px 0;
+   }
+
+   #review-form .review-form-wrap .review-icons {
+      margin-right: 0;
+      margin-top: 24px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item {
+      margin: 0 8px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item img {
+      width: 40px;
+      height: 40px;
+   }
+
+   #review-form .review-form-wrap .review-icons .review-icons-item p {
+      font-size: 12px;
+      margin-top: 16px;
+   }
+
+   /* review-form end */
 }
