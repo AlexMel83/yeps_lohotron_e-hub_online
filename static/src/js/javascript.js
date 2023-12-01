@@ -25,7 +25,7 @@ $(document).ready(function () {
 
    async function getPhones() {
 
-      const response = await $.get("http://safetalk.fromavdiivka.city:4040/api/phones");
+      const response = await get("http://safetalk.fromavdiivka.city:4040/api/phones");
 
       return response;
 
